@@ -1,0 +1,1325 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Case 2 · Assessing the Offers for Seven &amp; i Holdings ｜ 學生版</title>
+<style>
+:root{
+  --ntu:#002B5C; --ntu2:#01356F; --gold:#C9A227;
+  --paper:#F4F7FC; --ink:#0B1220; --muted:#475569;
+  --muted2:#64748B; --line:#D7DEE9; --card:#FFFFFF;
+  --shadow:0 10px 30px rgba(2,6,23,.10);
+  --radius:16px; --radius2:20px;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --s0:#065F46; --t1:#4C1D95; --t2:#0F766E; --c1:#B45309; --s1:#1E3A5F; --ai:#991B1B;
+  --green:#15803D; --sub:#94A3B8; --surface:#FBFCFE;
+  --act:#0E7490; --ito:#7C3AED; --standalone:#475569;
+}
+*{box-sizing:border-box;}
+html,body{height:100%;margin:0;}
+body{font-family:var(--sans);font-size:16px;color:var(--ink);
+  background:radial-gradient(1200px 600px at 8% 0%,rgba(0,43,92,.07),transparent 55%),
+             radial-gradient(900px 500px at 96% 4%,rgba(201,162,39,.10),transparent 55%),
+             var(--paper);}
+.topbar{display:flex;align-items:center;justify-content:space-between;
+  padding:13px 18px;border-bottom:1px solid var(--line);position:sticky;top:0;
+  background:rgba(244,247,252,.94);backdrop-filter:blur(10px);z-index:20;}
+.brand{display:flex;gap:12px;align-items:center;min-width:0;}
+.logo{width:50px;height:50px;display:grid;place-items:center;border-radius:14px;
+  background:linear-gradient(135deg,var(--ntu),var(--ntu2));color:#fff;
+  font-weight:900;letter-spacing:.08em;box-shadow:0 8px 22px rgba(0,43,92,.28);font-size:13px;}
+.brandText{min-width:0;}
+.course{font-size:11px;color:var(--muted);letter-spacing:.03em;}
+.topic{font-size:15px;font-weight:900;color:var(--ntu);line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+.btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;
+  font-weight:700;cursor:pointer;transition:.12s ease;font-size:13px;color:var(--ink);}
+.btn:hover{border-color:rgba(0,43,92,.35);box-shadow:0 6px 16px rgba(0,0,0,.08);}
+.btn.gold{border-color:rgba(201,162,39,.45);background:rgba(201,162,39,.12);color:#5A4600;}
+.btn.primary{background:var(--ntu);color:#fff;border-color:var(--ntu);}
+.btn.primary:hover{background:var(--ntu2);}
+.layout{display:grid;grid-template-columns:288px 1fr;gap:18px;padding:18px;max-width:1480px;margin:0 auto;}
+.sidebar{position:sticky;top:86px;align-self:start;border:1px solid var(--line);border-radius:var(--radius2);
+  background:rgba(255,255,255,.78);backdrop-filter:blur(8px);box-shadow:var(--shadow);padding:14px;
+  max-height:calc(100vh - 104px);overflow-y:auto;}
+.navTitle{font-size:10px;color:var(--muted);letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px;padding:0 4px;}
+.navItem{width:100%;text-align:left;padding:9px 11px;border-radius:11px;border:1px solid transparent;
+  background:transparent;cursor:pointer;font-weight:700;font-size:13px;color:var(--ntu2);display:block;
+  transition:.1s ease;margin-bottom:2px;line-height:1.35;}
+.navItem:hover{background:rgba(0,43,92,.06);}
+.navItem.active{background:rgba(0,43,92,.10);border-color:rgba(0,43,92,.18);}
+.navItem.seg-s0.active{background:rgba(6,95,70,.10);border-color:rgba(6,95,70,.25);color:var(--s0);}
+.navItem.seg-t1.active{background:rgba(76,29,149,.10);border-color:rgba(76,29,149,.25);color:var(--t1);}
+.navItem.seg-t2.active{background:rgba(15,118,110,.10);border-color:rgba(15,118,110,.25);color:var(--t2);}
+.navItem.seg-c1.active{background:rgba(180,83,9,.10);border-color:rgba(180,83,9,.25);color:var(--c1);}
+.navItem.seg-s1.active{background:rgba(30,58,95,.10);border-color:rgba(30,58,95,.25);color:var(--s1);}
+.navFooter{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);}
+.hint{font-size:11px;color:var(--muted);line-height:1.5;}
+.kbd{font-family:var(--mono);font-weight:900;padding:2px 6px;border:1px solid var(--line);border-radius:7px;background:#fff;color:var(--muted);font-size:10px;}
+.content{border:1px solid var(--line);border-radius:var(--radius2);background:rgba(255,255,255,.88);
+  backdrop-filter:blur(8px);box-shadow:var(--shadow);padding:24px;min-height:calc(100vh - 160px);}
+.sectionHead{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:20px;}
+.h1{font-size:27px;font-weight:900;color:var(--ntu);margin:0;line-height:1.18;}
+.sub{margin:6px 0 0;color:var(--muted);line-height:1.5;font-size:15px;}
+.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(0,43,92,.25);
+  background:rgba(0,43,92,.08);color:var(--ntu);padding:8px 14px;border-radius:999px;font-weight:800;white-space:nowrap;font-size:13px;}
+.timeTracker{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px;}
+.timePill{font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--muted);}
+.timePill.s0{background:var(--s0);color:#fff;border-color:var(--s0);}
+.timePill.t1{background:var(--t1);color:#fff;border-color:var(--t1);}
+.timePill.t2{background:var(--t2);color:#fff;border-color:var(--t2);}
+.timePill.c1{background:var(--c1);color:#fff;border-color:var(--c1);}
+.timePill.s1{background:var(--s1);color:#fff;border-color:var(--s1);}
+.timePill.cur{opacity:1!important;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;}
+.card{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);padding:16px;box-shadow:0 6px 18px rgba(0,0,0,.06);}
+.cardTitle{font-weight:900;color:var(--ntu);margin:0 0 10px;font-size:15px;}
+.p{margin:0;color:var(--ink);line-height:1.65;font-size:15px;}
+.ul{margin:8px 0 0 20px;color:var(--ink);line-height:1.65;font-size:15px;}
+.ul li{margin-bottom:5px;}
+.sm{font-size:13px;color:var(--muted);}
+hr.sep{border:0;border-top:1px solid var(--line);margin:14px 0;}
+.callout{border-left:5px solid var(--ntu);padding:12px 14px;background:rgba(0,43,92,.05);border-radius:12px;margin:10px 0;line-height:1.6;}
+.callout.gold{border-color:var(--gold);background:rgba(201,162,39,.08);}
+.callout.green{border-color:#15803d;background:rgba(21,128,61,.06);}
+.callout.purple{border-color:#7C3AED;background:rgba(124,58,237,.06);}
+.callout.red{border-color:#DC2626;background:rgba(220,38,38,.05);}
+.callout.teal{border-color:#0E7490;background:rgba(14,116,144,.06);}
+.callout.teacher{border-color:#D97706;background:rgba(217,119,6,.07);border-style:dashed;}
+.callout strong{color:var(--ntu);}
+.callout.gold strong{color:#7C5500;}
+.callout.green strong{color:#14532D;}
+.callout.purple strong{color:#5B21B6;}
+.callout.red strong{color:#991B1B;}
+.callout.teal strong{color:#164E63;}
+.callout.teacher strong{color:#92400E;}
+.pillRow{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;}
+.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 11px;font-weight:700;font-size:13px;display:flex;align-items:center;gap:6px;color:var(--ink);}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.dot.b{background:var(--ntu);} .dot.g{background:#15803d;} .dot.p{background:#7C3AED;} .dot.r{background:#DC2626;} .dot.t{background:#0E7490;}
+.qBox{border:1.5px dashed rgba(0,43,92,.28);background:rgba(0,43,92,.03);border-radius:14px;padding:14px;margin:10px 0;}
+.qTitle{font-weight:900;margin:0 0 10px;color:var(--ntu);font-size:15px;}
+.options{display:grid;gap:8px;}
+.opt{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 12px;cursor:pointer;font-weight:700;text-align:left;transition:.1s ease;font-size:14px;color:var(--ink);}
+.opt:hover{border-color:rgba(0,43,92,.35);box-shadow:0 6px 16px rgba(0,0,0,.07);}
+.opt.chosen{border-color:rgba(0,43,92,.50);background:rgba(0,43,92,.06);}
+.opt.correct{border-color:#15803d;background:rgba(21,128,61,.09);color:#14532d;}
+.opt.wrong{border-color:#DC2626;background:rgba(220,38,38,.07);color:#7f1d1d;}
+.opt[disabled]{cursor:default;}
+.bar{height:11px;border-radius:999px;background:rgba(0,0,0,.06);overflow:hidden;flex:1;border:1px solid var(--line);}
+.fill{height:100%;width:0%;background:linear-gradient(90deg,var(--gold),var(--ntu));transition:width .4s ease;}
+.smallVote{color:var(--muted);font-size:12px;font-family:var(--mono);}
+.tbl{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;line-height:1.5;}
+.tbl th{background:rgba(0,43,92,.06);color:var(--ntu);font-weight:800;font-size:12.5px;letter-spacing:.02em;}
+.tbl tbody tr:nth-child(even){background:rgba(244,247,252,.55);}
+.tbl tbody tr:hover{background:rgba(201,162,39,.06);}
+.revealBox{display:none;}
+.revealBox.visible{display:block;animation:fadeSlide .3s ease;}
+@keyframes fadeSlide{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:none;}}
+.debateGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;}
+.debateCard{border:1px solid var(--line);border-radius:14px;padding:14px;}
+.debateCard.act{border-left:4px solid var(--act);}
+.debateCard.ito{border-left:4px solid var(--ito);}
+.debateCard.stand{border-left:4px solid var(--standalone);}
+.debateLabel{font-weight:900;font-size:13px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px;}
+.debateCard.act .debateLabel{color:var(--act);}
+.debateCard.ito .debateLabel{color:var(--ito);}
+.debateCard.stand .debateLabel{color:var(--standalone);}
+.govBar{background:linear-gradient(90deg,#E0F2FE,#DDD6FE,#FEE2E2);border-radius:12px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;font-weight:800;font-size:13px;margin:10px 0;}
+.govItem{text-align:center;flex:1;}
+.govArrow{color:var(--muted);font-size:18px;}
+.teacherBadge{display:inline-block;background:#D97706;color:#fff;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:.04em;margin-left:8px;}
+.studentBadge{display:inline-block;background:#0F766E;color:#fff;padding:3px 10px;border-radius:6px;font-size:11px;font-weight:800;letter-spacing:.04em;margin-left:8px;}
+
+.footballField{display:grid;grid-template-columns:160px 1fr 80px;gap:6px;align-items:center;margin:8px 0;font-size:12.5px;}
+.ff-label{font-weight:800;color:var(--ink);}
+.ff-bar-wrap{position:relative;height:18px;background:#f1f5f9;border-radius:4px;border:1px solid var(--line);}
+.ff-bar{position:absolute;height:100%;border-radius:3px;}
+.ff-bar.premium{background:rgba(76,29,149,.3);}
+.ff-bar.multiple{background:rgba(15,118,110,.3);}
+.ff-bar.sotp{background:rgba(180,83,9,.3);}
+.ff-bar.dcf{background:rgba(0,43,92,.3);}
+.ff-base{position:absolute;width:2px;height:100%;background:var(--ink);}
+.ff-offer{position:absolute;width:2.5px;height:120%;top:-10%;}
+.ff-offer.act{background:var(--act);}
+.ff-offer.ito{background:var(--ito);}
+.ff-val{font-family:var(--mono);font-size:11.5px;color:var(--muted);text-align:right;}
+
+/* === Interactive calculator styles === */
+.calc{border:2px solid var(--t1);background:linear-gradient(180deg,rgba(76,29,149,.04),rgba(255,255,255,0));border-radius:14px;padding:16px;margin:14px 0;}
+.calc.t2{border-color:var(--c1);background:linear-gradient(180deg,rgba(180,83,9,.04),rgba(255,255,255,0));}
+.calc.dcf{border-color:var(--ntu);background:linear-gradient(180deg,rgba(0,43,92,.04),rgba(255,255,255,0));}
+.calc h4{margin:0 0 10px;font-size:14.5px;font-weight:900;color:var(--t1);display:flex;align-items:center;gap:6px;}
+.calc.t2 h4{color:var(--c1);}
+.calc.dcf h4{color:var(--ntu);}
+.calc .sliderRow{display:grid;grid-template-columns:160px 1fr 100px;align-items:center;gap:10px;padding:6px 0;}
+.calc .sliderLabel{font-weight:700;font-size:13px;color:var(--ink);}
+.calc input[type="range"]{width:100%;-webkit-appearance:none;appearance:none;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--t1),var(--gold));outline:none;cursor:pointer;}
+.calc.t2 input[type="range"]{background:linear-gradient(90deg,var(--c1),var(--gold));}
+.calc.dcf input[type="range"]{background:linear-gradient(90deg,var(--ntu),var(--gold));}
+.calc input[type="range"]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--t1);cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2);transition:.15s;}
+.calc input[type="range"]::-webkit-slider-thumb:hover{transform:scale(1.15);}
+.calc.t2 input[type="range"]::-webkit-slider-thumb{border-color:var(--c1);}
+.calc.dcf input[type="range"]::-webkit-slider-thumb{border-color:var(--ntu);}
+.calc input[type="range"]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#fff;border:3px solid var(--t1);cursor:pointer;}
+.calc.t2 input[type="range"]::-moz-range-thumb{border-color:var(--c1);}
+.calc.dcf input[type="range"]::-moz-range-thumb{border-color:var(--ntu);}
+.calc .sliderVal{font-family:var(--mono);font-size:14px;font-weight:900;color:var(--t1);text-align:right;padding:4px 8px;background:#fff;border:1px solid var(--line);border-radius:6px;}
+.calc.t2 .sliderVal{color:var(--c1);}
+.calc.dcf .sliderVal{color:var(--ntu);}
+.calc .liveResult{margin-top:14px;padding:14px;background:#fff;border:1.5px solid var(--t1);border-radius:10px;}
+.calc.t2 .liveResult{border-color:var(--c1);}
+.calc.dcf .liveResult{border-color:var(--ntu);}
+.calc .liveResult .resTitle{font-size:11px;font-weight:800;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
+.calc .liveResult .resPrice{font-family:var(--mono);font-size:32px;font-weight:900;color:var(--t1);transition:.25s color;}
+.calc.t2 .liveResult .resPrice{color:var(--c1);}
+.calc.dcf .liveResult .resPrice{color:var(--ntu);}
+.calc .liveResult.beat-ito .resPrice{color:#15803D;}
+.calc .liveResult.beat-act .resPrice{color:#7C3AED;}
+.calc .liveResult.below-current .resPrice{color:#DC2626;}
+.calc .resSubline{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.5;}
+.calc .vsLine{position:relative;height:34px;margin-top:12px;background:linear-gradient(90deg,#fef2f2 0%,#fef3c7 40%,#dcfce7 100%);border:1px solid var(--line);border-radius:6px;}
+.calc .vsTick{position:absolute;top:-3px;width:2px;height:40px;}
+.calc .vsTick.cur{background:var(--standalone);}
+.calc .vsTick.act{background:var(--act);}
+.calc .vsTick.ito{background:var(--ito);}
+.calc .vsTick.live{background:#DC2626;animation:pulse 1.2s ease-in-out infinite;width:3px;}
+.calc .vsTick .lbl{position:absolute;top:42px;left:-22px;width:50px;font-size:9px;font-weight:800;text-align:center;color:inherit;}
+.calc .vsTick.cur .lbl{color:var(--standalone);}
+.calc .vsTick.act .lbl{color:var(--act);}
+.calc .vsTick.ito .lbl{color:var(--ito);}
+.calc .vsTick.live .lbl{color:#DC2626;top:-22px;background:#fff;border:1px solid #DC2626;border-radius:6px;padding:1px 4px;width:auto;left:50%;transform:translateX(-50%);white-space:nowrap;}
+@keyframes pulse{0%,100%{opacity:1;transform:scaleY(1);}50%{opacity:.6;transform:scaleY(1.15);}}
+.calc .axisLabels{display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--muted);margin-top:24px;padding:0 4px;}
+
+/* === SoTP segment bars (T2) === */
+.sotpBars{display:grid;gap:8px;margin:12px 0;}
+.sotpRow{display:grid;grid-template-columns:170px 1fr 120px;gap:10px;align-items:center;font-size:12.5px;}
+.sotpRow .bu{font-weight:800;}
+.sotpRow .barWrap{position:relative;height:24px;background:#f1f5f9;border-radius:5px;border:1px solid var(--line);overflow:hidden;}
+.sotpRow .barFill{position:absolute;left:0;top:0;height:100%;background:linear-gradient(90deg,var(--c1),var(--gold));transition:width .35s cubic-bezier(.34,.62,.4,1);}
+.sotpRow .barLabel{position:absolute;top:50%;transform:translateY(-50%);left:8px;font-family:var(--mono);font-size:11px;font-weight:900;color:#fff;text-shadow:0 0 4px rgba(0,0,0,.4);}
+.sotpRow .barVal{font-family:var(--mono);font-weight:900;text-align:right;color:var(--c1);}
+.sotpTotal{padding:12px;background:linear-gradient(90deg,rgba(180,83,9,.10),rgba(201,162,39,.10));border-radius:10px;text-align:center;margin-top:10px;}
+.sotpTotal .totLbl{font-size:11px;color:var(--muted);letter-spacing:.06em;font-weight:800;text-transform:uppercase;}
+.sotpTotal .totVal{font-family:var(--mono);font-size:28px;font-weight:900;color:var(--c1);transition:.25s;}
+.sotpTotal.beat-act .totVal{color:#15803D;}
+.sotpTotal.beat-ito .totVal{color:#7C3AED;}
+
+/* Animated growth bars in S0 background */
+.miniStat{display:grid;grid-template-columns:1fr 80px;gap:8px;align-items:center;margin:5px 0;font-size:12px;}
+.miniStat .miniLabel{font-weight:700;color:var(--ink);}
+.miniStat .miniBar{height:10px;background:#f1f5f9;border-radius:5px;overflow:hidden;border:1px solid var(--line);}
+.miniStat .miniBarFill{height:100%;background:linear-gradient(90deg,var(--s0),var(--gold));animation:growFill 1.2s cubic-bezier(.34,.62,.4,1);}
+.miniStat .miniVal{font-family:var(--mono);font-size:11.5px;font-weight:900;color:var(--s0);text-align:right;}
+@keyframes growFill{from{width:0!important;}}
+
+@media(max-width:880px){.layout{grid-template-columns:1fr;}.sidebar{position:static;max-height:none;}.grid2,.grid3{grid-template-columns:1fr;}.debateGrid{grid-template-columns:1fr;}.calc .sliderRow{grid-template-columns:1fr;}.sotpRow{grid-template-columns:1fr;}}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(60px);background:var(--ntu);color:#fff;padding:10px 20px;border-radius:999px;font-weight:700;font-size:14px;transition:.3s ease;z-index:100;pointer-events:none;opacity:0;}
+#toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
+.presenter .sidebar{display:none;}
+.presenter .layout{grid-template-columns:1fr;padding:14px 20px;}
+.presenter .content{font-size:17px;padding:28px 32px;min-height:calc(100vh - 80px);}
+.presenter .h1{font-size:32px;}
+.presenter .sub{font-size:17px;}
+.presenter .p,.presenter .ul{font-size:17px;}
+.presenter .cardTitle{font-size:17px;}
+.presenter .card{padding:20px;}
+.presenter .callout{font-size:16px;padding:14px 18px;}
+.presenter .tbl th,.presenter .tbl td{font-size:14px;padding:10px 12px;}
+.presenter .opt{font-size:16px;padding:12px 16px;}
+.presenter .qTitle{font-size:17px;}
+.presenter .pill{font-size:14px;}
+.presenter #btnPresenter{background:var(--gold);border-color:var(--gold);color:#5A4600;box-shadow:0 0 0 3px rgba(201,162,39,.35);}
+.presenter .topbar::after{content:"📽 投影模式 ON";position:fixed;top:10px;right:18px;font-size:11px;font-weight:800;color:var(--gold);letter-spacing:.06em;pointer-events:none;z-index:30;}
+.numberStat{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:10px 0;}
+.numberStat .stat{border:1px solid var(--line);border-radius:12px;padding:10px;background:#fff;text-align:center;}
+.numberStat .stat .num{font-family:var(--mono);font-size:22px;font-weight:900;color:var(--ntu);}
+.numberStat .stat .lbl{font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.04em;text-transform:uppercase;}
+.tickerStrip{display:flex;gap:14px;flex-wrap:wrap;margin:10px 0;padding:10px 14px;background:linear-gradient(90deg,rgba(124,58,237,.08),rgba(14,116,144,.08));border-radius:12px;font-size:13px;}
+.tickerStrip span{font-weight:800;color:var(--ntu);}
+.tickerStrip strong{color:var(--ai);font-family:var(--mono);}
+.bgGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:10px 0;}
+.bgCol{padding:11px;background:rgba(244,247,252,.6);border-radius:10px;border:1px solid var(--line);}
+.bgCol h5{margin:0 0 6px;font-size:13px;font-weight:900;color:var(--s0);}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="logo">NTU<br>IBS</div>
+    <div class="brandText">
+      <div class="course">IBS · International Business Strategy · Case 2</div>
+      <div class="topic">Assessing the Offers for Seven &amp; i Holdings <span class="studentBadge">STUDENT 學生版</span></div>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="btn" id="btnLang">EN / 中</button>
+    <button class="btn" id="btnPresenter">投影模式</button>
+    <button class="btn" id="btnReset">↺ Reset</button>
+  </div>
+</div>
+
+<div class="layout">
+  <nav class="sidebar">
+    <div class="navTitle">Case 2 Pastures</div>
+    <button class="navItem seg-s0" data-view="s0">🎬 S0 · 開場：策略地圖 + S&amp;i 背景 + 雙 Offer · 10 min</button>
+    <button class="navItem seg-t1" data-view="t1">💰 T1 · 四大估值法（互動計算器）· 25 min</button>
+    <button class="navItem seg-t2" data-view="t2">🧩 T2 · Conglomerate × SoTP（拖曳分析）· 12 min</button>
+    <button class="navItem seg-c1" data-view="c1">⚖️ C1 · Stakeholder vs. Shareholder · 8 min</button>
+    <button class="navItem seg-s1" data-view="s1">📝 S1 · 委員會決策 Memo · 5 min</button>
+    <div class="navFooter">
+      <div class="hint">⬅ ➡ 切換段落<br/><span class="kbd">L</span> 語言 <span class="kbd">P</span> 投影 <span class="kbd">R</span> 重置</div>
+    </div>
+  </nav>
+  <main class="content" id="content"></main>
+</div>
+<div id="toast"></div>
+
+<script>
+// ============= VERSION FLAG =============
+const IS_TEACHER = false;  // STUDENT VERSION
+// ========================================
+
+const STORE = IS_TEACHER ? "ibs_case2_seven_i_2026_teacher" : "ibs_case2_seven_i_2026_student";
+const VIEW_ORDER = ["s0","t1","t2","c1","s1"];
+const DEF = {lang:"zh",presenter:false,view:"s0",polls:{},quizDone:{},reveals:{},calc:{}};
+let ST = load();
+const content = document.getElementById("content");
+const toast = document.getElementById("toast");
+function load(){try{const s=localStorage.getItem(STORE);return s?{...DEF,...JSON.parse(s)}:{...DEF};}catch(e){return{...DEF};}}
+function save(){try{localStorage.setItem(STORE,JSON.stringify(ST));}catch(e){}}
+function showToast(m){toast.textContent=m;toast.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(()=>toast.classList.remove("show"),2200);}
+
+function getPoll(k){return ST.polls[k]||{a:0,b:0,c:0,d:0,choice:null};}
+function vote(k,ch){const p=getPoll(k);if(p.choice)p[p.choice]=Math.max(0,(p[p.choice]||0)-1);p.choice=ch;p[ch]=(p[ch]||0)+1;ST.polls[k]=p;save();}
+function tot(p){return(p.a||0)+(p.b||0)+(p.c||0)+(p.d||0);}
+function pct(p,k){const t=tot(p);return t?Math.round((p[k]||0)/t*100):0;}
+
+function pollCard({key,title,title_en,opts,followup,followup_en}){
+  const p=getPoll(key);const t=tot(p);const zh=ST.lang==="zh";
+  return `<div class="qBox">
+    <p class="qTitle">📊 ${zh?title:title_en}</p>
+    <div class="options">
+      ${opts.map(([k,lz,le])=>`<button class="opt${p.choice===k?' chosen':''}" data-poll="${key}" data-opt="${k}">${k.toUpperCase()}. ${zh?lz:le}</button>`).join("")}
+    </div>
+    ${t>0?`<div style="margin-top:10px;display:grid;gap:4px;">
+      ${opts.map(([k,lz,le])=>`<div style="display:flex;align-items:center;gap:6px;">
+        <span style="width:30px;font-weight:900;font-family:var(--mono);font-size:12px;">${pct(p,k)}%</span>
+        <div class="bar"><div class="fill" style="width:${pct(p,k)}%"></div></div>
+        <span style="font-size:12px;color:var(--muted)">${k.toUpperCase()}. ${zh?lz:le}</span>
+      </div>`).join("")}
+      <div style="margin-top:4px;"><span class="smallVote">${t} 票</span></div>
+    </div>`:""}
+    ${(zh?followup:followup_en)?`<hr class="sep"/><p class="sm" style="font-weight:800;">💬 討論追問</p><ul class="ul" style="font-size:13px;margin-top:0;color:var(--muted);">${(zh?followup:followup_en).map(q=>`<li>${q}</li>`).join("")}</ul>`:""}
+  </div>`;
+}
+
+function quizCard({key,q,q_en,opts,ans,exp,exp_en}){
+  const zh=ST.lang==="zh";const done=ST.quizDone[key];
+  return `<div class="qBox">
+    <p class="qTitle">🧠 ${zh?q:q_en}</p>
+    <div class="options">
+      ${opts.map(([lz,le],i)=>`<button class="opt${done===i+1?(i===ans?' correct':' wrong'):''}" data-quiz="${key}" data-idx="${i}" ${done?'disabled':''}>${String.fromCharCode(65+i)}. ${zh?lz:le}</button>`).join("")}
+    </div>
+    ${done?`<div class="callout ${done-1===ans?'green':'red'}" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;">${done-1===ans?"✅":"❌"} ${zh?exp:exp_en}</p>
+    </div>`:""}
+  </div>`;
+}
+
+function timeTags(cur){
+  const segs=[["s0","🎬 S0","10min"],["t1","💰 T1 估值法","25min"],["t2","🧩 T2 SoTP","12min"],["c1","⚖️ C1 治理","8min"],["s1","📝 S1 Memo","5min"]];
+  return `<div class="timeTracker">${segs.map(([k,l,t])=>`<span class="timePill ${k} ${k===cur?'cur':''}" style="${k===cur?'':'opacity:.5'}">${l} ${t}</span>`).join("")}</div>`;
+}
+
+function revealBtn(id,label="💡 教師提示"){
+  if(!IS_TEACHER) return "";
+  return `<button class="btn gold" style="font-size:12px;padding:6px 12px;" onclick="toggleReveal('${id}')">${label}</button>`;
+}
+function revealSection(id,html){
+  if(!IS_TEACHER) return "";
+  const shown=ST.reveals[id];
+  return `<div id="${id}Rev" class="revealBox callout teacher${shown?' visible':''}" style="margin-top:10px;">
+    <p style="font-size:11px;font-weight:900;color:#92400E;margin:0 0 6px;">📋 TEACHER NOTE（可收合）</p>
+    ${html}
+  </div>`;
+}
+function toggleReveal(id){
+  const el=document.getElementById(id+"Rev");
+  ST.reveals[id]=!ST.reveals[id];
+  if(el) el.classList.toggle("visible",ST.reveals[id]);
+  save();
+}
+
+/* ─── Calculator value-store helpers ─── */
+function calcGet(key,def){return ST.calc[key]!==undefined?ST.calc[key]:def;}
+function calcSet(key,val){ST.calc[key]=val;save();}
+
+/* ───────────── S0: OPENING ───────────── */
+function viewS0(){
+  const zh=ST.lang==="zh";
+  return `
+  <div class="sectionHead">
+    <div>
+      <h1 class="h1">${zh?"🎬 S0｜開場：Sirower &amp; Weirens 策略地圖 × Seven &amp; i 雙 Offer 困局":"🎬 S0 | Opening: Sirower &amp; Weirens Strategy Map × Seven &amp; i Two-Offer Dilemma"}</h1>
+      <p class="sub">${zh?"動態成長框架 · S&amp;i 公司背景 · 案例事實 · 特別委員會的決策困境":"Dynamic growth framework · S&amp;i company background · Case facts · The Special Committee's decision dilemma"}</p>
+    </div>
+    <div class="tag">10 min</div>
+  </div>
+  ${timeTags("s0")}
+
+  <!-- OPENING FRAMEWORK: Sirower & Weirens 2022 -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--s0);">
+    <p class="cardTitle">🗺️ ${zh?"理論起點：Dynamic Corporate Growth – Persistent Search and Choice of Businesses（Sirower &amp; Weirens, 2022）":"Theoretical Starting Point: Dynamic Corporate Growth – Persistent Search and Choice of Businesses (Sirower &amp; Weirens, 2022)"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;margin-bottom:10px;">${zh?
+    "在進入 Seven &amp; i 的具體 offers 之前，我們先建立一個更大的<strong>動態企業成長框架</strong>。Sirower &amp; Weirens 提出：企業的成長並非單一決策，而是一條不斷在<em>『Exit（退出）』vs.『Grow（成長）』</em>之間做選擇的<strong>持續性流程</strong>──而成長一旦選擇『非有機』路徑，就會踏入一條完整的 M&amp;A 決策鏈：Alliance/M&amp;A → Diligence → Valuation &amp; Synergy → Announcement Day → Integration Planning → Post-close Execution。" :
+    "Before drilling into the Seven &amp; i offers, set up a larger <strong>dynamic corporate-growth framework</strong>. Sirower &amp; Weirens argue: growth is not a single decision but a <strong>persistent process</strong> of choosing between <em>Exit vs. Grow</em> — and once a firm picks the non-organic path, it enters the full M&amp;A decision chain: Alliance/M&amp;A → Diligence → Valuation &amp; Synergy → Announcement Day → Integration Planning → Post-close Execution."}</p>
+
+    <div style="overflow-x:auto;">
+    <svg viewBox="0 0 1080 540" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:1100px;display:block;margin:0 auto;font-family:var(--sans);background:#fff;border:1px solid var(--line);border-radius:10px;">
+      <text x="20" y="32" font-weight="900" font-size="18" fill="#0066CC">${zh?"動態企業成長：持續性的事業搜尋與選擇":"Dynamic corporate growth – Persistent search and choice of businesses (2)"}</text>
+      <line x1="20" y1="44" x2="780" y2="44" stroke="#0066CC" stroke-width="1.5"/>
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#5EAEC4"/></marker>
+      </defs>
+      <rect x="40" y="100" width="180" height="50" rx="4" fill="#fff" stroke="#5EAEC4" stroke-width="2"/>
+      <text x="130" y="130" text-anchor="middle" font-size="15" fill="#0B1220">Corporate Strategy</text>
+      <line x1="130" y1="150" x2="130" y2="200" stroke="#5EAEC4" stroke-width="2" marker-end="url(#arr)"/>
+      <ellipse cx="130" cy="225" rx="60" ry="22" fill="#5EAEC4" stroke="#5EAEC4"/>
+      <text x="130" y="231" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Exit</text>
+      <line x1="130" y1="247" x2="130" y2="290" stroke="#5EAEC4" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="50" y="295" width="160" height="55" rx="4" fill="#fff" stroke="#5EAEC4" stroke-width="2"/>
+      <text x="130" y="320" text-anchor="middle" font-size="14" fill="#0B1220">Divestment</text>
+      <text x="130" y="338" text-anchor="middle" font-size="14" fill="#0B1220">Management</text>
+      <line x1="220" y1="125" x2="340" y2="125" stroke="#5EAEC4" stroke-width="2" marker-end="url(#arr)"/>
+      <ellipse cx="400" cy="125" rx="60" ry="22" fill="#5EAEC4" stroke="#5EAEC4"/>
+      <text x="400" y="131" text-anchor="middle" font-size="15" fill="#fff" font-weight="700">Grow</text>
+      <line x1="460" y1="125" x2="540" y2="125" stroke="#5EAEC4" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="550" y="100" width="160" height="50" rx="4" fill="#fff" stroke="#5EAEC4" stroke-width="2"/>
+      <text x="630" y="120" text-anchor="middle" font-size="14" fill="#0B1220">Grow</text>
+      <text x="630" y="138" text-anchor="middle" font-size="14" fill="#0B1220">Organically</text>
+      <line x1="400" y1="147" x2="400" y2="200" stroke="#5EAEC4" stroke-width="2" marker-end="url(#arr)"/>
+      <rect x="320" y="205" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="430" y="227" text-anchor="middle" font-size="14" fill="#0B1220">Alliance / M&amp;A</text>
+      <rect x="340" y="245" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="450" y="267" text-anchor="middle" font-size="14" fill="#0B1220">Diligence</text>
+      <rect x="360" y="285" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="470" y="307" text-anchor="middle" font-size="14" fill="#0B1220">Valuation &amp; Synergy</text>
+      <rect x="380" y="325" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="490" y="347" text-anchor="middle" font-size="14" fill="#0B1220">Announcement Day</text>
+      <rect x="400" y="365" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="510" y="387" text-anchor="middle" font-size="14" fill="#0B1220">Integration Planning</text>
+      <rect x="420" y="405" width="220" height="36" rx="3" fill="#fff" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="530" y="427" text-anchor="middle" font-size="14" fill="#0B1220">Post-close Execution</text>
+      <path d="M 420 423 Q 70 530 40 200 L 40 130" fill="none" stroke="#5EAEC4" stroke-width="1.2" stroke-dasharray="5 4"/>
+      <line x1="40" y1="160" x2="40" y2="125" stroke="#5EAEC4" stroke-width="1.2" stroke-dasharray="5 4" marker-end="url(#arr)"/>
+      <text x="900" y="140" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Strategy</text>
+      <text x="900" y="158" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Options</text>
+      <text x="900" y="240" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">M&amp;A</text>
+      <text x="900" y="258" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Options</text>
+      <text x="900" y="340" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Deal</text>
+      <text x="900" y="358" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Management</text>
+      <text x="900" y="440" text-anchor="middle" font-size="15" fill="#0B1220" font-weight="700">Integration</text>
+      <path d="M 870 110 L 870 170 L 880 170 L 880 110 L 870 110" fill="none" stroke="#5EAEC4" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <path d="M 870 200 L 870 280 L 880 280 L 880 200 L 870 200" fill="none" stroke="#5EAEC4" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <path d="M 870 305 L 870 400 L 880 400 L 880 305 L 870 305" fill="none" stroke="#5EAEC4" stroke-width="1.5" stroke-dasharray="3 3"/>
+      <path d="M 880 405 L 880 440 L 910 440 L 895 470 L 880 440 L 880 440 Z" fill="#5EAEC4" opacity=".6" stroke="#5EAEC4" stroke-width="1.5"/>
+      <text x="1060" y="525" text-anchor="end" font-size="11" fill="#475569" font-style="italic">Source: Adapted from Sirower and Weirens, 2022</text>
+    </svg>
+    </div>
+    <p class="sm" style="margin-top:10px;line-height:1.7;font-style:italic;">${zh?"💡 <strong>注意</strong>：這張圖把 <em>『公司治理層級的策略選擇』</em>與 <em>『M&amp;A 流程的執行管理』</em> 並列。Seven &amp; i 案例的特殊之處在於：S&amp;i 既<em>是 Grow Organically 的執行者</em>，又同時被兩方<em>當成 Alliance/M&amp;A 的標的</em>。本週我們把焦點放在<strong>Valuation &amp; Synergy</strong>方塊──這正是 Special Committee 此刻必須完成的工作。":"💡 <strong>Note</strong>: this map juxtaposes governance-level choice with M&amp;A process execution. Seven &amp; i is simultaneously <em>executing Grow Organically</em> AND <em>being targeted as Alliance/M&amp;A</em>. This week we anchor on <strong>Valuation &amp; Synergy</strong> — exactly the Special Committee's work."}</p>
+  </div>
+
+  <!-- =========== NEW: SEVEN & i COMPANY BACKGROUND CARD =========== -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--s0);background:linear-gradient(180deg,rgba(6,95,70,.04),rgba(255,255,255,0));">
+    <p class="cardTitle" style="color:var(--s0);">🏯 ${zh?"Seven &amp; i Holdings 公司背景（案件前情）":"Seven &amp; i Holdings Background (Pre-case Context)"}</p>
+
+    <div class="bgGrid">
+      <div class="bgCol">
+        <h5>📖 ${zh?"歷史 · 創辦人 · 哲學":"History · Founder · Philosophy"}</h5>
+        <ul class="ul" style="font-size:12.5px;margin:0;padding-left:18px;line-height:1.6;">
+          <li>${zh?"<strong>1958</strong>：Masatoshi Ito 從叔父手中接下東京的小型成衣店 Yokado（後改名 Ito-Yokado）":"<strong>1958</strong>: Masatoshi Ito takes over uncle's small Tokyo clothing store Yokado (later Ito-Yokado)"}</li>
+          <li>${zh?"<strong>1974</strong>：與美國 7-Eleven 簽授權，在日本開出第一家便利商店":"<strong>1974</strong>: Licenses the 7-Eleven brand from the US; opens Japan's first konbini"}</li>
+          <li>${zh?"<strong>1978</strong>：開始賣手作飯糰 onigiri，把『商品』在地化──開創 konbini 商業模式":"<strong>1978</strong>: Starts selling onigiri rice balls — localizes the product line and creates the konbini model"}</li>
+          <li>${zh?"<strong>2001</strong>：成立 Seven Bank 並把 ATM 開進店裡":"<strong>2001</strong>: Founds Seven Bank, ATMs in stores"}</li>
+          <li>${zh?"<strong>2005</strong>：改組成 Seven &amp; i Holdings（控股公司）":"<strong>2005</strong>: Reorganized as Seven &amp; i Holdings (holding co)"}</li>
+          <li>${zh?"<strong>2023</strong>：Masatoshi Ito 去世（享壽 98）":"<strong>2023</strong>: Masatoshi Ito dies (age 98)"}</li>
+        </ul>
+        <div class="callout" style="margin:10px 0 0;padding:8px 11px;background:rgba(6,95,70,.06);border-left:3px solid var(--s0);font-size:12px;">
+          ${zh?"<strong>💡 創辦人哲學</strong>：師承 Peter Drucker──『公司的目的是服務顧客，不是極大化利潤』。新進員工要看一段 18 分鐘的影片：金字塔頂端是<em>顧客</em>，中段是<em>供應商 / 在地社區 / 員工</em>，底部才是<em>股東</em>。這個哲學深深影響委員會今天的辯論。":"<strong>💡 Founder philosophy</strong>: Drucker-inspired — \"company's purpose is to serve customers, not maximize profits.\" Every new employee watches an 18-min Ito video: pyramid top = <em>customers</em>; middle = <em>suppliers / community / employees</em>; bottom = <em>shareholders</em>. This shapes today's Committee debate."}
+        </div>
+      </div>
+
+      <div class="bgCol">
+        <h5>📊 ${zh?"2024 規模指標（動畫顯示相對量級）":"2024 Scale Metrics (animated relative bars)"}</h5>
+        <div class="miniStat"><div class="miniLabel">${zh?"營收 (¥Tr)":"Revenue (¥Tr)"}</div><div class="miniBar"><div class="miniBarFill" style="width:96%;"></div></div><div class="miniVal">¥11.5T</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"全球店數":"Stores worldwide"}</div><div class="miniBar"><div class="miniBarFill" style="width:88%;"></div></div><div class="miniVal">85,000</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"日本店數":"Japan stores"}</div><div class="miniBar"><div class="miniBarFill" style="width:38%;"></div></div><div class="miniVal">21,500</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"美國市占":"US market share"}</div><div class="miniBar"><div class="miniBarFill" style="width:34%;"></div></div><div class="miniVal">8.5%</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"日本市占":"Japan market share"}</div><div class="miniBar"><div class="miniBarFill" style="width:90%;"></div></div><div class="miniVal">46%</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"每日來客 (M)":"Daily customers (M)"}</div><div class="miniBar"><div class="miniBarFill" style="width:70%;"></div></div><div class="miniVal">63M</div></div>
+        <div class="miniStat"><div class="miniLabel">${zh?"FY24E EBITDA (¥B)":"FY24E EBITDA (¥B)"}</div><div class="miniBar"><div class="miniBarFill" style="width:78%;"></div></div><div class="miniVal">¥1,102B</div></div>
+        <div class="miniStat"><div class="miniLabel">ROE (FY23)</div><div class="miniBar"><div class="miniBarFill" style="width:18%;background:linear-gradient(90deg,#DC2626,#F59E0B);"></div></div><div class="miniVal" style="color:#DC2626;">6.2%</div></div>
+      </div>
+    </div>
+
+    <p class="sm" style="margin-top:12px;font-weight:800;color:var(--s0);">📦 ${zh?"五大事業單位（EBITDA 占比 + 營業利益率，揭示 conglomerate 的內在不均）":"Five Business Segments (EBITDA share + operating margin — reveals the conglomerate's internal asymmetry)"}</p>
+    <div style="overflow-x:auto;">
+    <table class="tbl">
+      <thead><tr><th>${zh?"事業單位":"Segment"}</th><th>${zh?"營收 (¥B)":"Revenue (¥B)"}</th><th>${zh?"營收占比":"Rev %"}</th><th>${zh?"EBITDA (¥B)":"EBITDA (¥B)"}</th><th>${zh?"EBITDA 占比":"EBITDA %"}</th><th>${zh?"營業利益率":"Op Margin"}</th></tr></thead>
+      <tbody>
+        <tr style="background:rgba(15,118,110,.06);"><td><strong>${zh?"國內便利商店":"Domestic CVS"}</strong></td><td>922</td><td>8%</td><td><strong>341</strong></td><td><strong>32%</strong></td><td style="color:#15803D;font-weight:900;">27%</td></tr>
+        <tr style="background:rgba(76,29,149,.05);"><td><strong>${zh?"海外便利商店":"Overseas CVS"}</strong></td><td>8,517</td><td>74%</td><td><strong>625</strong></td><td><strong>59%</strong></td><td style="color:#DC2626;font-weight:900;">4%</td></tr>
+        <tr><td>${zh?"超市 (Superstore)":"Superstore"}</td><td>1,477</td><td>13%</td><td>54</td><td>5%</td><td style="color:var(--muted);">1%</td></tr>
+        <tr><td>${zh?"金融服務 (Seven Bank)":"Financial Services (Seven Bank)"}</td><td>207</td><td>2%</td><td>73</td><td>7%</td><td>18%</td></tr>
+        <tr><td>${zh?"其他 27 個事業":"Others (27 misc businesses)"}</td><td>411</td><td>4%</td><td>14</td><td>1%</td><td style="color:var(--muted);">1%</td></tr>
+        <tr style="background:rgba(0,43,92,.08);font-weight:900;"><td>Total</td><td>11,472</td><td>100%</td><td>1,055</td><td>100%</td><td>5%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout teal" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"關鍵內在矛盾":"Internal contradiction"}</strong>：${zh?"日本店 27% 營業利益率 vs. 海外店 4%──但海外占 74% 營收。<em>整個集團的獲利能力被海外的『燃料 + 香菸 + 冷飲』低毛利商品稀釋</em>。Isaka 的核心戰略就是要把美國 7-Eleven 改造成日式『新鮮食物 + 服務』模式（食物占比從 24% 拉到 33%）。<em>這個改造能否成功，是所有估值差異的根源</em>。":"Japan stores at 27% op margin vs. overseas at 4% — but overseas is 74% of revenue. <em>The group's profitability is diluted by overseas \"fuel + cigarettes + cold drinks\"</em>. Isaka's core strategy: convert US 7-Eleven into the Japanese \"fresh food + services\" model (food share from 24% → 33%). <em>Whether this transformation succeeds is the root of every valuation gap.</em>"}</p>
+    </div>
+
+    <p class="sm" style="margin-top:14px;font-weight:800;color:var(--s0);">⚔️ ${zh?"案件前史：兩波活躍投資人 + Isaka 的回應":"Pre-case history: two activist waves + Isaka's response"}</p>
+    <div class="grid2" style="margin-top:6px;">
+      <div style="border:1px solid var(--line);border-radius:10px;padding:10px;background:rgba(15,118,110,.04);border-left:3px solid var(--t2);">
+        <p style="font-weight:900;color:var(--t2);margin:0 0 5px;font-size:12.5px;">2015 · Third Point (Daniel Loeb)</p>
+        <p class="p" style="font-size:12px;line-height:1.55;">${zh?"&lt;5% 持股，要求分拆 Ito-Yokado 超市、聚焦 c-store；阻止 CEO 鈴木把職位傳給兒子，逼 Isaka 接任。":"<5% stake; demanded Ito-Yokado spin-off, c-store focus; blocked CEO Suzuki nepotistic succession, installed Isaka."}</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:10px;background:rgba(124,58,237,.05);border-left:3px solid var(--ito);">
+        <p style="font-weight:900;color:var(--ito);margin:0 0 5px;font-size:12.5px;">2020–2023 · ValueAct Capital</p>
+        <p class="p" style="font-size:12px;line-height:1.55;">${zh?"4% 持股，公開信批『可能淪為平庸甚至更糟』──促成 2022 董事會改組（多數獨董）+ 出售 Sogo/Seibu 百貨。":"4% stake; public letter warned of \"drift into mediocrity or worse\" — drove 2022 board overhaul (majority outside) + sale of Sogo/Seibu."}</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:10px;background:rgba(180,83,9,.05);border-left:3px solid var(--c1);">
+        <p style="font-weight:900;color:var(--c1);margin:0 0 5px;font-size:12.5px;">2024.04 · ${zh?"CEO/Chair 分離":"CEO/Chair split"}</p>
+        <p class="p" style="font-size:12px;line-height:1.55;">${zh?"Stephen Dacus（雙語美籍，母為日人；幼時在父親 7-Eleven 夜班打工；曾任西友 / Walmart Japan CEO）被指派為 Lead Independent Outside Director。":"Stephen Dacus (bilingual American, Japanese mother; worked night shift at father's 7-Eleven; ex-CEO Seiyu/Walmart Japan) named Lead Independent Outside Director."}</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:10px;background:rgba(0,43,92,.05);border-left:3px solid var(--ntu);">
+        <p style="font-weight:900;color:var(--ntu);margin:0 0 5px;font-size:12.5px;">2024.10 · York Holdings ${zh?"宣布":"announced"}</p>
+        <p class="p" style="font-size:12px;line-height:1.55;">${zh?"ACT 第二次提案後，Isaka 馬上宣布把 31 個非核心事業打包成 York Holdings，並擬把母公司改名 Seven Eleven Corporation。M&amp;A 專家 Kawamoto 批評為『stopgap』。":"After ACT's 2nd bid, Isaka immediately bundled 31 non-core units into York Holdings + plans to rename parent as Seven Eleven Corporation. M&amp;A expert Kawamoto called it a \"stopgap\"."}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY FACTS (Two offers) -->
+  <div class="card" style="margin-bottom:14px;">
+    <p class="cardTitle">📍 ${zh?"關鍵事實：兩個 Offer + 三個錨點價格":"Key Facts: Two Offers + Three Anchor Prices"}</p>
+    <div class="tickerStrip">
+      <span>📅 ${zh?"2024-07-19 案前股價":"Pre-deal (2024-07-19)"}: <strong>¥1,801</strong></span>
+      <span>📅 ACT 1st (8/19): <strong>¥2,194 / $14.86</strong></span>
+      <span>📅 ACT 2nd (10/9): <strong>¥2,693 / $18.19</strong></span>
+      <span>📅 J. Ito MBO (11/13): <strong>¥3,400 / $22.00</strong></span>
+      <span>📅 ${zh?"當前股價":"Current"} (11/18): <strong>¥2,556</strong></span>
+    </div>
+    <div class="grid3" style="gap:10px;margin-top:10px;">
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(14,116,144,.05);border-left:3px solid var(--act);">
+        <p style="font-weight:900;color:var(--act);margin:0 0 5px;font-size:13.5px;">🇨🇦 ACT (Alimentation Couche-Tard)</p>
+        <ul class="ul" style="font-size:12.5px;margin:0;padding-left:18px;line-height:1.6;">
+          <li>${zh?"加拿大 Circle K 母公司，全球第 2 大便利商店":"Canadian parent of Circle K; #2 c-store operator globally"}</li>
+          <li>${zh?"FY24 營收 US$69Bn ≈ ¥11.0Tr（與 S&i 相近）":"FY24 revenue US$69Bn ≈ ¥11.0Tr (similar to S&i)"}</li>
+          <li>ROE 21% · ${zh?"BBB+ 評等 · 過去 10 年 TSR +450%":"BBB+ · 10-yr TSR +450%"}</li>
+          <li>${zh?"主動 2 次提案 · 自帶銀行『highly confident』財務承諾":"Two unsolicited bids; bankers' \"highly confident\" letter in hand"}</li>
+        </ul>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(124,58,237,.05);border-left:3px solid var(--ito);">
+        <p style="font-weight:900;color:var(--ito);margin:0 0 5px;font-size:13.5px;">👨‍👦 J. Ito MBO (Ito-Kogyo)</p>
+        <ul class="ul" style="font-size:12.5px;margin:0;padding-left:18px;line-height:1.6;">
+          <li>${zh?"創辦人之子 Junro Ito，透過家族資產公司 Ito-Kogyo 出價":"Founder's son Junro Ito, via the Ito family's asset mgmt arm"}</li>
+          <li>${zh?"¥9Tr ($58Bn) 總交易規模──若成案將是史上最大 MBO":"¥9Tr ($58Bn) total — would be the largest MBO in history"}</li>
+          <li>${zh?"三井住友 / 三菱 UFJ / 瑞穗『正在探索』湊出 ¥6Tr":"SMBC / MUFG / Mizuho \"exploring\" ¥6Tr financing"}</li>
+          <li>${zh?"創辦家族公開反對外資控股":"Founding family openly opposes foreign ownership"}</li>
+        </ul>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(71,85,105,.06);border-left:3px solid var(--standalone);">
+        <p style="font-weight:900;color:var(--standalone);margin:0 0 5px;font-size:13.5px;">🏯 S&amp;i Standalone (Isaka 計畫)</p>
+        <ul class="ul" style="font-size:12.5px;margin:0;padding-left:18px;line-height:1.6;">
+          <li>${zh?"宣布成立 York Holdings──把 31 個非核心事業另立子公司":"Announced York Holdings — 31 non-core units carved into new sub"}</li>
+          <li>${zh?"改名 Seven Eleven Corporation，聚焦便利商店":"Rename to Seven Eleven Corporation, focus on c-store"}</li>
+          <li>${zh?"中期目標：FY25 EBITDA ≥¥986Bn、ROIC ≥8%、Debt/EBITDA <1.8X":"Mid-term: FY25 EBITDA ≥¥986Bn, ROIC ≥8%, D/EBITDA <1.8X"}</li>
+          <li>${zh?"FEFTA 已被指定為『核心』──提高外資併購門檻":"FEFTA-designated as \"core\" — raises foreign-acquisition bar"}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2" style="margin-bottom:14px;">
+    <div class="card">
+      <p class="cardTitle">🎯 ${zh?"Special Committee 的核心問題":"The Special Committee's Core Question"}</p>
+      <div class="callout gold">
+        <p class="p" style="font-size:13.5px;font-weight:700;line-height:1.7;">${zh?
+        "Stephen Dacus（特別委員會主席、Lead Independent Director）2024 年 11 月 18 日要做的決策<strong>不是</strong>『誰出價高』──而是要依照 2023 年 METI M&amp;A Guidelines，做一個<strong>有紀錄、可辯護</strong>的判斷：<br/><br/>" +
+        "(1) ACT 的 <strong>¥2,693/股</strong> 全現金 offer<br/>" +
+        "(2) J. Ito 的 <strong>¥3,400/股</strong> MBO offer<br/>" +
+        "(3) Isaka 經營團隊的 <strong>standalone value</strong><br/><br/>" +
+        "──哪一個最能 <em>『secure or enhance corporate value</em> 並 <em>promote shareholders' common interests』</em>？" :
+        "Dacus's decision on Nov 18, 2024 is <strong>not</strong> 'whose price is higher' — it's to produce a <strong>documented, defensible</strong> judgment under METI's 2023 M&amp;A Guidelines:<br/><br/>" +
+        "(1) ACT's <strong>¥2,693/sh</strong> all-cash<br/>" +
+        "(2) J. Ito's <strong>¥3,400/sh</strong> MBO<br/>" +
+        "(3) Isaka management's <strong>standalone value</strong><br/><br/>" +
+        "— which best <em>'secures or enhances corporate value'</em> and <em>'promotes shareholders' common interests'?</em>"}</p>
+      </div>
+    </div>
+    <div class="card">
+      <p class="cardTitle">🧭 ${zh?"本次討論路線圖":"Discussion Roadmap"}</p>
+      <div style="overflow-x:auto;">
+      <table class="tbl"><thead><tr><th>${zh?"段落":"Section"}</th><th>${zh?"核心問題":"Core Question"}</th><th>${zh?"理論工具":"Framework"}</th><th>${zh?"時間":"Time"}</th></tr></thead>
+      <tbody>
+        <tr><td>S0</td><td>${zh?"動態成長地圖、S&i 背景、決策困局":"Dynamic growth, S&i background, dilemma"}</td><td>Sirower &amp; Weirens (2022)</td><td>10 min</td></tr>
+        <tr><td>T1</td><td>${zh?"四大估值法（互動計算器）":"Four methods (interactive)"}</td><td>${zh?"Esty Exhibits 8–11":"Esty Exhibits 8–11"}</td><td>25 min</td></tr>
+        <tr><td>T2</td><td>${zh?"Conglomerate discount + 拖曳 SoTP":"Conglomerate + draggable SoTP"}</td><td>${zh?"多元化折扣文獻":"Diversification discount lit"}</td><td>12 min</td></tr>
+        <tr><td>C1</td><td>${zh?"Stakeholder vs. Shareholder Primacy":"Stakeholder vs. Shareholder"}</td><td>METI · FEFTA · Ito Review</td><td>8 min</td></tr>
+        <tr><td>S1</td><td>${zh?"5 分鐘 Memo":"5-minute memo"}</td><td>${zh?"3 層結構":"3-layer"}</td><td>5 min</td></tr>
+      </tbody></table>
+      </div>
+    </div>
+  </div>
+
+  ${pollCard({key:"s0_choice",title:"直覺投票：若你只能聽完案件背景就要表態，你會推薦哪個 offer？",title_en:"Gut vote: based on the case background alone, which offer would you recommend?",opts:[["a","ACT 2nd Offer ¥2,693（外資、現金、有財務承諾）","ACT 2nd Offer ¥2,693 (foreign, cash, financing letter)"],["b","J. Ito MBO Offer ¥3,400（價高、家族、保留日本控股）","J. Ito MBO Offer ¥3,400 (higher, family, keeps Japanese)"],["c","Standalone（拒絕兩個 offer，相信 Isaka York Holdings 計畫）","Standalone (reject both, trust Isaka)"],["d","還沒看完估值，無法表態","Can't decide before seeing the valuation"]],followup:["A：你怎麼定義 feasibility？FEFTA 風險如何量化？","B：¥6Tr 融資只在『探索』──你能接受多少 financing certainty？","C：standalone DCF base 只有 ¥2,412──如何說服股東拒絕 ¥3,400？","D：你需要看到的下一個關鍵數字是？"],followup_en:["A: How define feasibility? How quantify FEFTA risk?","B: ¥6Tr financing 'being explored' — minimum certainty?","C: Standalone DCF base only ¥2,412 — how reject ¥3,400?","D: What's the next critical number?"]})}
+
+  ${revealBtn("s0_close","📋 TEACHER NOTE — S0 引課建議 10 min（點擊收合/展開）")}
+  ${revealSection("s0_close",`
+    <ul class="ul" style="font-size:13px;margin-top:0;line-height:1.7;">
+      <li><strong>先讓學生直覺投票，不分析數字</strong>。預期 B（J. Ito MBO）會吸引多數人（『價最高』+『家族故事』），這是<em>定錨偏誤的好教材</em>──稍後 T1 估值會證明 standalone DCF 只有 ¥2,412，¥3,400 是 89% premium。</li>
+      <li><strong>用 S&i 背景卡帶出『內在矛盾』</strong>：日本店 27% margin vs. 海外 4%──這不是商業弱點，是『conglomerate 結構』的具體呈現。Isaka 的中期計畫（年改 70% 商品 / 重構美國店）是要拆掉這個內在矛盾，但他用了 10 年只把美國食物占比從 18% 推到 24%──ACT 拿走後能不能比 Isaka 更快做到 33%？這是 ACT 願意付 premium 的核心信念。</li>
+      <li><strong>S0 不要過早收斂</strong>。重點是把 Sirower-Weirens 框架掛在牆上：本案的『Valuation &amp; Synergy』方塊正在運作。同時，特別委員會的<em>程序合法性</em>（依 METI Guidelines）和<em>實質結論</em>是兩件不同的事──委員會被觀察的是『有沒有 sincere consideration』，不是『有沒有接受最高價』。</li>
+      <li><strong>關鍵劇情精度提醒</strong>：別讓學生把 ACT 與 J. Ito 簡化為『外資 vs. 本土』──真正的對立是 <em>shareholder-value-maximization</em>（兩個 offer 都遠高於 standalone）vs. <em>stakeholder primacy</em>（創辦家族的精神遺產、konbini 作為國家災防基礎設施）。這個張力會在 C1 段集中討論。</li>
+      <li><strong>建立『估值不是答案、是輔助判斷的工具』的心理預備</strong>。Esty 提供四種方法（Exhibits 8–11），結果分布在 <em>¥1,263 至 ¥3,562</em> 之間──學生會驚訝範圍這麼大。這正是 T1 要訓練的判斷力，並且 T1 提供<em>互動計算器</em>讓學生親手感受 multiple / margin / growth 對結果的非線性影響。</li>
+    </ul>
+  `)}
+  `;
+}
+
+/* ───────────── T1: INTERACTIVE VALUATION ───────────── */
+function viewT1(){
+  const zh=ST.lang==="zh";
+  return `
+  <div class="sectionHead">
+    <div>
+      <h1 class="h1">${zh?"💰 T1｜四大 Acquisition Valuation Methods 系統比較（互動）":"💰 T1 | Four Acquisition Valuation Methods (Interactive)"}</h1>
+      <p class="sub">${zh?"Price Premium · Transaction Multiples · Sum-of-the-Parts · DCF · 親手拖曳 slider 看結果如何擺盪":"Price Premium · Transaction Multiples · SoTP · DCF · Drag the sliders and watch the answer swing"}</p>
+    </div>
+    <div class="tag">25 min</div>
+  </div>
+  ${timeTags("t1")}
+
+  <div class="callout" style="background:linear-gradient(90deg,rgba(0,43,92,.06),rgba(76,29,149,.06));border-left:4px solid var(--t1);margin-bottom:14px;">
+    <p class="p" style="font-size:13px;margin:0;line-height:1.65;">${zh?"<strong style='color:var(--t1);'>↳ 接續 S0：</strong>S0 投票顯示直覺容易被最高價吸引。T1 用四個估值架構檢驗──並提供<em>兩組互動計算器</em>，讓你親手拖曳倍數、margin、growth，看價格如何擺盪。每個方法都不是答案，而是一面鏡子。":"<strong style='color:var(--t1);'>↳ From S0:</strong> S0 showed intuition gravitates to highest price. T1 stress-tests it via four frames — and offers <em>two interactive calculators</em>: drag multiples, margin, growth and watch prices swing. Each method is a mirror, not an answer."}</p>
+  </div>
+
+  <!-- METHOD OVERVIEW -->
+  <div class="card" style="margin-bottom:14px;background:rgba(244,247,252,.5);">
+    <p class="cardTitle" style="font-size:13px;">📐 ${zh?"四個方法回答的不是同一個問題":"What question does each method answer?"}</p>
+    <div style="overflow-x:auto;">
+    <table class="tbl">
+      <thead><tr>
+        <th style="width:18%;">${zh?"方法":"Method"}</th>
+        <th style="width:32%;">${zh?"它回答的問題":"Question"}</th>
+        <th style="width:25%;">${zh?"主要輸入":"Key input"}</th>
+        <th style="width:25%;">${zh?"主要陷阱":"Main pitfall"}</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong style="color:var(--t1);">① Price Premium</strong></td><td>${zh?"『同類交易付多少溢價？』":"\"What premium do comparables pay?\""}</td><td>${zh?"4-week 股價 × 行業中位":"4-wk price × industry median"}</td><td>${zh?"錨點若已被低估，premium 看似正常仍低估":"If anchor was discounted, 'normal' premium undervalues"}</td></tr>
+        <tr><td><strong style="color:var(--t2);">② EV/EBITDA</strong></td><td>${zh?"『市場給類似事業多少倍數？』":"\"What multiple does the market pay?\""}</td><td>${zh?"comparable 交易中位數":"Median from comparables"}</td><td>${zh?"S&i 是 conglomerate，找『真可比』極難":"S&i is a conglomerate; comparables are scarce"}</td></tr>
+        <tr><td><strong style="color:var(--c1);">③ SoTP</strong></td><td>${zh?"『分拆後相加是多少？』":"\"What's each unit worth, summed?\""}</td><td>${zh?"pure-play 倍數 × 各 BU":"Pure-play multiples × each BU"}</td><td>${zh?"暗設 discount 可消除──卻不告訴你成本":"Assumes discount removable — but hides the cost"}</td></tr>
+        <tr><td><strong style="color:var(--ntu);">④ DCF</strong></td><td>${zh?"『未來 FCF 折現？』(METI 指定)":"\"PV of future FCFs?\" (METI-preferred)"}</td><td>${zh?"FCF 預測 × WACC × g":"FCF × WACC × g"}</td><td>${zh?"TV ≈ 85% of total──微調 g/WACC 即翻案":"TV ≈ 85% — small g/WACC moves flip result"}</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- ===== METHOD 1: PRICE PREMIUM ===== -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--t1);">
+    <p class="cardTitle" style="color:var(--t1);">① ${zh?"Price Premium 法（Exhibit 8）":"Price Premium Method (Exhibit 8)"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?
+    "<strong>邏輯</strong>：用 4-week pre-deal 股價避開消息洩漏，乘以行業中位溢價得隱含 offer 價。":
+    "<strong>Logic</strong>: 4-wk pre-deal price × industry median premium = implied offer price."}</p>
+
+    <div class="numberStat">
+      <div class="stat"><div class="num">¥1,801</div><div class="lbl">${zh?"4 週前股價":"4-wk pre-deal"}</div></div>
+      <div class="stat"><div class="num">34%</div><div class="lbl">${zh?"日本食品零售中位":"JP F&B median"}</div></div>
+      <div class="stat"><div class="num">¥2,413</div><div class="lbl">${zh?"中位 premium 隱含價":"Median implied"}</div></div>
+    </div>
+
+    <div style="overflow-x:auto;margin-top:10px;">
+    <table class="tbl">
+      <thead><tr><th>Premium</th><th>${zh?"隱含每股價 (JPY)":"Implied (JPY)"}</th><th>USD</th><th>${zh?"對照":"Reference"}</th></tr></thead>
+      <tbody>
+        <tr><td>20%</td><td>¥2,161</td><td>$14.64</td><td></td></tr>
+        <tr style="background:rgba(14,116,144,.08);"><td>22%</td><td>¥2,197</td><td>$14.88</td><td><strong style="color:var(--act);">≈ ACT 1st ($14.86)</strong></td></tr>
+        <tr><td>30%</td><td>¥2,341</td><td>$15.86</td><td></td></tr>
+        <tr><td><strong>34% (median)</strong></td><td><strong>¥2,413</strong></td><td>$16.34</td><td>${zh?"中位":"Median"}</td></tr>
+        <tr><td>40%</td><td>¥2,521</td><td>$17.08</td><td></td></tr>
+        <tr style="background:rgba(14,116,144,.08);"><td>49%</td><td>¥2,683</td><td>$18.17</td><td><strong style="color:var(--act);">≈ ACT 2nd ($18.19)</strong></td></tr>
+        <tr><td>60%</td><td>¥2,882</td><td>$19.51</td><td></td></tr>
+        <tr style="background:rgba(124,58,237,.08);"><td>81%</td><td>¥3,260</td><td>$22.08</td><td><strong style="color:var(--ito);">≈ J. Ito ($22.00)</strong></td></tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div class="callout" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"關鍵觀察":"Key reading"}</strong>：${zh?"ACT 49% premium 落在 IQR 上緣；J. Ito 89% 遠超出。<em>但</em>──如果 7/19 股價已被 conglomerate discount 壓低 ~15%，premium 再大可能仍低估。":"ACT 49% sits at IQR upper edge; J. Ito 89% well above. <em>But</em> — if 7/19 was already discounted ~15%, even generous premium undervalues."}</p>
+    </div>
+
+    ${quizCard({key:"t1_premium_q",q:"Special Committee 為何拒絕 ACT 第一次 offer (¥2,194)？最強的理論理由是：",q_en:"Why reject ACT's 1st offer? Strongest theoretical reason:",opts:[["¥2,194 低於 J. Ito 的 ¥3,400──家族出價就是天花板","Below J. Ito ¥3,400 — family is ceiling"],["¥2,194 隱含 22% premium 且錨點已含 conglomerate discount，雙重低估","22% premium AND anchor embeds conglomerate discount — double undervaluation"],["ACT 是外國公司，FEFTA 必然否決","ACT is foreign — FEFTA rejects"],["¥2,194 低於 standalone DCF base ¥2,412","Below standalone DCF base ¥2,412"]],ans:1,exp:"B 正確。22% premium 在 IQR 下半；更關鍵是『定錨偏誤』──pre-deal 股價已被 conglomerate discount 壓低 ~15%。'grossly undervalues' 有理論依據。",exp_en:"B. 22% sits low in IQR; the anchor is itself discounted ~15%. 'Grossly undervalues' is grounded."})}
+  </div>
+
+  <!-- ===== METHOD 2: TRANSACTION MULTIPLE (INTERACTIVE) ===== -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--t2);">
+    <p class="cardTitle" style="color:var(--t2);">② ${zh?"Transaction Multiple / EV-EBITDA（Exhibit 9）":"Transaction Multiple / EV-EBITDA (Exhibit 9)"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"<strong>邏輯</strong>：comparable 交易付的 EV/EBITDA × 目標 EBITDA，扣淨債、除股數。<strong>判斷的痛點在 comparable 選擇</strong>──ACT 過去 4 筆 c-store 收購中位 8.3x，但 S&i 是 conglomerate。":"<strong>Logic</strong>: comparable EV/EBITDA × target EBITDA, less net debt, ÷ shares. <strong>The judgment lives in comparable selection</strong> — ACT's 4 prior c-store deals median 8.3x, but S&i is a conglomerate."}</p>
+
+    <!-- ============ INTERACTIVE CALCULATOR #1: EV/EBITDA SLIDER ============ -->
+    <div class="calc" id="calc-multiple">
+      <h4>🎚️ ${zh?"互動計算器：拖曳 EV/EBITDA Multiple 看 S&i 每股估值如何變動":"Interactive: drag the EV/EBITDA multiple, watch S&i's per-share value swing"}</h4>
+      <div class="sliderRow">
+        <div class="sliderLabel">EV/EBITDA Multiple</div>
+        <input type="range" min="60" max="120" step="1" id="slMult" value="${calcGet('mult',85)}"/>
+        <div class="sliderVal" id="slMultVal">${(calcGet('mult',85)/10).toFixed(1)}×</div>
+      </div>
+      <div class="sm" style="font-size:11.5px;color:var(--muted);padding:0 4px;">${zh?"範圍：6.0× ~ 12.0× · 固定輸入：EBITDA ¥1,102B / Cash ¥1,470B / Debt ¥4,370B / Shares 2,604.6M":"Range: 6.0× ~ 12.0× · Fixed: EBITDA ¥1,102B / Cash ¥1,470B / Debt ¥4,370B / Shares 2,604.6M"}</div>
+
+      <div class="liveResult" id="multResult">
+        <div class="resTitle">${zh?"每股隱含價":"Implied per-share value"}</div>
+        <div class="resPrice" id="multPrice">¥—</div>
+        <div class="resSubline" id="multSub"></div>
+      </div>
+
+      <!-- VS line: where this lands vs ACT/Ito (axis ¥0-¥5,000) -->
+      <div class="vsLine" id="multVsLine">
+        <div class="vsTick cur" style="left:51.12%;"><div class="lbl">¥2,556<br/>Current</div></div>
+        <div class="vsTick act" style="left:53.86%;"><div class="lbl">¥2,693<br/>ACT</div></div>
+        <div class="vsTick ito" style="left:68%;"><div class="lbl">¥3,400<br/>J. Ito</div></div>
+        <div class="vsTick live" id="multLiveTick" style="left:49.66%;"><div class="lbl" id="multLiveLbl">¥2,483</div></div>
+      </div>
+      <div class="axisLabels"><span>¥0</span><span>¥1,000</span><span>¥2,000</span><span>¥3,000</span><span>¥4,000</span><span>¥5,000</span></div>
+    </div>
+
+    <div class="callout teal" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"關鍵 puzzle":"Key puzzle"}</strong>：${zh?"S&i 自己 trading 在 8x，ACT trading 在 11x──這 3x gap 是 conglomerate discount 還是經營能力差距？這正是 ACT 想買 S&i 的核心信念：<strong>把 8x 經營升級成 11x</strong>。":"S&i trades 8x; ACT trades 11x — is the gap conglomerate discount or operating-quality? This is ACT's core thesis: <strong>uplift S&i's 8x toward 11x</strong>."}</p>
+    </div>
+  </div>
+
+  <!-- ===== METHOD 3: SoTP (referenced — full interactive in T2) ===== -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--c1);">
+    <p class="cardTitle" style="color:var(--c1);">③ ${zh?"Sum-of-the-Parts (Exhibit 10)──完整互動版本在 T2":"Sum-of-the-Parts (Exhibit 10) — full interactive version in T2"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"<strong>邏輯</strong>：conglomerate 用單一倍數會失真，因為每個 BU economics 不同。SoTP 用對應的 pure-play 倍數逐一估值再相加。海外 c-store（59% EBITDA）是<strong>搖擺變數</strong>：給 6x → ¥1,500；給 12x → ¥3,000。":"<strong>Logic</strong>: conglomerates distort under one multiple. SoTP values each BU with pure-play multiples and sums. Overseas c-store (59% EBITDA) is the <strong>swing variable</strong>: 6x → ¥1,500; 12x → ¥3,000."}</p>
+
+    <div class="numberStat">
+      <div class="stat"><div class="num">¥2,399</div><div class="lbl">${zh?"基準 (海外 9.5x / 國內 7x)":"Base (Ovs 9.5x / Dom 7x)"}</div></div>
+      <div class="stat"><div class="num">59%</div><div class="lbl">${zh?"海外占 EBITDA":"Overseas EBITDA share"}</div></div>
+      <div class="stat"><div class="num" style="color:var(--c1);">→ T2</div><div class="lbl">${zh?"前往 T2 拖曳調整":"Drag in T2"}</div></div>
+    </div>
+    <p class="sm" style="margin-top:8px;font-style:italic;">👉 ${zh?"請在 T2 段使用 4-slider 互動計算器，親手調整每個 BU 的倍數，並觀察 SoTP 總值的即時擺盪。":"👉 Use the 4-slider interactive calculator in T2 to adjust each BU's multiple and watch SoTP swing live."}</p>
+  </div>
+
+  <!-- ===== METHOD 4: DCF (INTERACTIVE) ===== -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--ntu);">
+    <p class="cardTitle" style="color:var(--ntu);">④ ${zh?"DCF（Exhibit 11）── METI 指定方法":"DCF (Exhibit 11) — METI-Preferred Method"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"<strong>邏輯</strong>：未來 FCF 折現 + terminal value 折現。METI 2023 明確規定 corporate value = sum of PVs of FCFs。":"<strong>Logic</strong>: discount future FCFs + TV. METI 2023 explicitly: corporate value = sum of PVs of FCFs."}</p>
+
+    <div class="numberStat">
+      <div class="stat"><div class="num">5.0%</div><div class="lbl">WACC</div></div>
+      <div class="stat"><div class="num">1.0%</div><div class="lbl">${zh?"終值成長 g":"Terminal g"}</div></div>
+      <div class="stat"><div class="num">85%</div><div class="lbl">${zh?"TV 佔總現值":"TV % of PV"}</div></div>
+    </div>
+
+    <!-- ============ INTERACTIVE CALCULATOR #2: DCF (EBIT margin × growth) ============ -->
+    <div class="calc dcf" id="calc-dcf">
+      <h4>🎚️ ${zh?"互動 DCF：拖曳 EBIT margin × Revenue growth 看每股價如何擺盪":"Interactive DCF: drag EBIT margin × revenue growth, watch per-share swing"}</h4>
+      <div class="sliderRow">
+        <div class="sliderLabel">EBIT Margin</div>
+        <input type="range" min="35" max="65" step="1" id="slMargin" value="${calcGet('mgn',50)}"/>
+        <div class="sliderVal" id="slMarginVal">${(calcGet('mgn',50)/10).toFixed(1)}%</div>
+      </div>
+      <div class="sliderRow">
+        <div class="sliderLabel">Revenue Growth</div>
+        <input type="range" min="0" max="40" step="1" id="slGrowth" value="${calcGet('grw',10)}"/>
+        <div class="sliderVal" id="slGrowthVal">${(calcGet('grw',10)/10).toFixed(1)}%</div>
+      </div>
+      <div class="sm" style="font-size:11.5px;color:var(--muted);padding:0 4px;">${zh?"範圍：margin 3.5%~6.5% · growth 0%~4% · 固定：WACC 5%, terminal g 1%, tax 33%, base revenue ¥11,629B":"Ranges: margin 3.5–6.5% · growth 0–4% · Fixed: WACC 5%, terminal g 1%, tax 33%, base rev ¥11,629B"}</div>
+
+      <div class="liveResult" id="dcfResult">
+        <div class="resTitle">${zh?"DCF 每股價":"DCF per-share value"}</div>
+        <div class="resPrice" id="dcfPrice">¥—</div>
+        <div class="resSubline" id="dcfSub"></div>
+      </div>
+
+      <div class="vsLine" id="dcfVsLine">
+        <div class="vsTick cur" style="left:51.12%;"><div class="lbl">¥2,556<br/>Current</div></div>
+        <div class="vsTick act" style="left:53.86%;"><div class="lbl">¥2,693<br/>ACT</div></div>
+        <div class="vsTick ito" style="left:68%;"><div class="lbl">¥3,400<br/>J. Ito</div></div>
+        <div class="vsTick live" id="dcfLiveTick" style="left:48.24%;"><div class="lbl" id="dcfLiveLbl">¥2,412</div></div>
+      </div>
+      <div class="axisLabels"><span>¥0</span><span>¥1,000</span><span>¥2,000</span><span>¥3,000</span><span>¥4,000</span><span>¥5,000</span></div>
+    </div>
+
+    <div class="callout" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"觀察點":"Reading"}</strong>：${zh?"base case (5% margin / 1% growth) = ¥2,412 < ACT 2nd ¥2,693 → ACT 已在付 standalone DCF 上的 premium。要到 J. Ito 的 ¥3,400 需要 5.5–6% margin + 2% growth。<em>請親手把兩個 slider 拉到那組組合，看 DCF 跳到哪</em>。":"Base (5% margin / 1% growth) = ¥2,412 < ACT 2nd ¥2,693 → ACT pays above standalone DCF. To reach J. Ito ¥3,400 need 5.5–6% margin + 2% growth. <em>Drag both sliders there and watch DCF jump</em>."}</p>
+    </div>
+  </div>
+
+  <!-- ===== FOOTBALL FIELD ===== -->
+  <div class="card" style="margin-bottom:14px;background:rgba(244,247,252,.5);">
+    <p class="cardTitle" style="font-size:14px;">🏈 ${zh?"Football Field：四個方法並排":"Football Field: Four Methods Side by Side"}</p>
+    <p class="sm" style="margin-bottom:10px;line-height:1.6;">${zh?"投資銀行不會挑一個方法，而是把所有方法畫在同一張軸上。下方軸：¥1,000 ~ ¥4,000。":"Bankers don't pick one — they plot all methods on one axis. Below: ¥1,000 ~ ¥4,000."}</p>
+
+    <div style="position:relative;padding:10px 0 30px 0;">
+      <div class="footballField"><div class="ff-label">① Premium 20–81%</div><div class="ff-bar-wrap"><div class="ff-bar premium" style="left:${(2161-1000)/30}%;width:${(3260-2161)/30}%;"></div><div class="ff-base" style="left:${(2413-1000)/30}%;"></div></div><div class="ff-val">¥2,161 – ¥3,260</div></div>
+      <div class="footballField"><div class="ff-label">② EV/EBITDA 6×–11×</div><div class="ff-bar-wrap"><div class="ff-bar multiple" style="left:${(1425-1000)/30}%;width:${(3541-1425)/30}%;"></div><div class="ff-base" style="left:${(2483-1000)/30}%;"></div></div><div class="ff-val">¥1,425 – ¥3,541</div></div>
+      <div class="footballField"><div class="ff-label">③ SoTP</div><div class="ff-bar-wrap"><div class="ff-bar sotp" style="left:${(1383-1000)/30}%;width:${(3164-1383)/30}%;"></div><div class="ff-base" style="left:${(2399-1000)/30}%;"></div></div><div class="ff-val">¥1,383 – ¥3,164</div></div>
+      <div class="footballField"><div class="ff-label">④ DCF</div><div class="ff-bar-wrap"><div class="ff-bar dcf" style="left:${(1263-1000)/30}%;width:${(3562-1263)/30}%;"></div><div class="ff-base" style="left:${(2412-1000)/30}%;"></div></div><div class="ff-val">¥1,263 – ¥3,562</div></div>
+      <div class="footballField" style="margin-top:14px;border-top:1.5px dashed var(--line);padding-top:12px;"><div class="ff-label" style="color:var(--act);">▎ACT 2nd offer</div><div class="ff-bar-wrap" style="background:transparent;border-color:transparent;"><div class="ff-offer act" style="left:${(2693-1000)/30}%;"></div><span style="position:absolute;left:${(2693-1000)/30+1}%;top:-6px;font-size:11px;font-weight:900;color:var(--act);">¥2,693</span></div><div class="ff-val" style="color:var(--act);font-weight:800;">¥2,693</div></div>
+      <div class="footballField"><div class="ff-label" style="color:var(--ito);">▎J. Ito MBO</div><div class="ff-bar-wrap" style="background:transparent;border-color:transparent;"><div class="ff-offer ito" style="left:${(3400-1000)/30}%;"></div><span style="position:absolute;left:${(3400-1000)/30+1}%;top:-6px;font-size:11px;font-weight:900;color:var(--ito);">¥3,400</span></div><div class="ff-val" style="color:var(--ito);font-weight:800;">¥3,400</div></div>
+      <div class="footballField"><div class="ff-label" style="color:var(--standalone);">▎Current price</div><div class="ff-bar-wrap" style="background:transparent;border-color:transparent;"><div class="ff-offer" style="left:${(2556-1000)/30}%;background:var(--standalone);"></div><span style="position:absolute;left:${(2556-1000)/30+1}%;top:-6px;font-size:11px;font-weight:900;color:var(--standalone);">¥2,556</span></div><div class="ff-val" style="color:var(--standalone);font-weight:800;">¥2,556</div></div>
+      <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:10.5px;color:var(--muted);padding:6px 0 0 166px;margin-right:86px;border-top:1px solid var(--line);">
+        <span>¥1,000</span><span>¥1,500</span><span>¥2,000</span><span>¥2,500</span><span>¥3,000</span><span>¥3,500</span><span>¥4,000</span>
+      </div>
+    </div>
+
+    <div class="callout gold" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"三個讀法":"Three readings"}</strong>：<br/>
+      ${zh?"<strong>(1) 四個 base case 集中在 ¥2,399–¥2,483</strong>──意外一致，但都<em>低於</em> ACT 2nd offer (¥2,693)。<br/>" +
+      "<strong>(2) 只有 EV/EBITDA（最高 ¥3,541）與 DCF（最高 ¥3,562）能觸及 ¥3,400</strong>──且都需要最樂觀假設（11× 倍數，或 6%+ margin 且 2%+ growth）。<br/>" +
+      "<strong>(3) Premium（最高 ¥3,260）與 SoTP（最高 ¥3,164）即使在 Exhibit 所列範圍的極端值，仍<em>無法</em>到 ¥3,400</strong>──J. Ito 的價超出這兩個方法的可解釋區間，是真正的『控制權溢價』。":"<strong>(1) Four base cases cluster at ¥2,399–¥2,483</strong> — surprisingly tight, all <em>below</em> ACT 2nd offer (¥2,693).<br/>" +
+      "<strong>(2) Only EV/EBITDA (max ¥3,541) and DCF (max ¥3,562) can reach ¥3,400</strong> — and only under the most optimistic assumptions (11× multiple, or 6%+ margin with 2%+ growth).<br/>" +
+      "<strong>(3) Premium (max ¥3,260) and SoTP (max ¥3,164) <em>cannot</em> reach ¥3,400</strong> even at the extreme of their exhibit ranges — J. Ito's price exceeds the explainable range of both methods; a true control premium."}</p>
+    </div>
+  </div>
+
+  ${pollCard({key:"t1_method_choice",title:"如果只能挑一個方法寫進 Committee memo，哪個是 primary anchor？",title_en:"If you can only use ONE method as primary anchor, which?",opts:[["a","Price Premium──市場資料、最難爭議","Premium — market-based, hardest to dispute"],["b","EV/EBITDA──comparable deals 客觀","EV/EBITDA — comparable deals are objective"],["c","SoTP──逼出 conglomerate discount","SoTP — exposes conglomerate discount"],["d","DCF──METI 指定","DCF — METI requires it"]],followup:["A：pre-deal 已被低估，如何處理錨點偏誤？","B：comparable 選擇本身就是判斷──如何防止 cherry-pick？","C：消除 discount 的成本你算進去了嗎？","D：terminal value 85%──g/WACC 一動結論翻案，這算客觀？"],followup_en:["A: How handle anchoring if pre-deal was depressed?","B: Comparable selection is judgment — prevent cherry-picking?","C: Did you cost the removal of the discount?","D: TV is 85%; small g/WACC shifts flip result — objective?"]})}
+
+  ${revealBtn("t1_close","📋 TEACHER NOTE — T1 收尾 25 min")}
+  ${revealSection("t1_close",`
+    <ul class="ul" style="font-size:13px;margin-top:0;line-height:1.7;">
+      <li><strong>互動計算器的使用方法</strong>：① 先讓學生拖 multiple slider 找『9x 對應 ACT、11x 對應 J. Ito』──親手感受 2x multiple 差距帶來 ¥1,000+ 每股差。② 再讓他們拖 DCF slider 找『要拉到 6% margin + 2% growth 才會到 J. Ito 價』──理解這需要假設美國改造 + 海外擴張 + 燃料依賴降低三件事都成功。</li>
+      <li><strong>不要讓學生選『一個方法』</strong>。Football Field 的真正意義是：四個方法<em>不互相替代</em>，而是<em>相互檢驗</em>。投行標準作法是 DCF 為主錨 + SoTP cross-check + Multiple 對接市場 + Premium benchmark。</li>
+      <li><strong>連回 Sirower-Weirens 框架</strong>：T1 處理的是『Valuation &amp; Synergy』方塊。下一步『Announcement Day』是 ACT 已經做過（公開兩次 offer），『Integration Planning』正是 ACT 從 2005、2020、2024 三次提案累積的功課。</li>
+      <li><strong>關鍵教學點</strong>：『base case 一致』≠『可信』。四個方法的 base case 都用了類似 mid-range assumptions 所以接近；但 standalone S&i 帶著 conglomerate discount，ACT 與 J. Ito 都不打算讓 S&i 維持現狀──所以他們付的 premium 反映<em>變化後</em>的價值。</li>
+      <li><strong>埋下 T2 伏筆</strong>：base case 之所以這麼低，部分是 conglomerate discount。T2 用 4-slider SoTP 計算器把 discount 拆出來。</li>
+    </ul>
+  `)}
+  `;
+}
+
+/* ───────────── T2: INTERACTIVE SoTP ───────────── */
+function viewT2(){
+  const zh=ST.lang==="zh";
+  return `
+  <div class="sectionHead">
+    <div>
+      <h1 class="h1">${zh?"🧩 T2｜Conglomerate Discount × SoTP（拖曳分析）":"🧩 T2 | Conglomerate Discount × SoTP (Drag-to-Explore)"}</h1>
+      <p class="sub">${zh?"為何多角化公司被折價 · 4-slider SoTP 計算器 · 收購方為何想吞 conglomerate":"Why diversified firms discount · 4-slider SoTP calculator · Why acquirers love conglomerates"}</p>
+    </div>
+    <div class="tag">12 min</div>
+  </div>
+  ${timeTags("t2")}
+
+  <div class="callout" style="background:linear-gradient(90deg,rgba(15,118,110,.06),rgba(180,83,9,.06));border-left:4px solid var(--t2);margin-bottom:14px;">
+    <p class="p" style="font-size:13px;margin:0;line-height:1.65;">${zh?"<strong style='color:var(--t2);'>↳ 接續 T1：</strong>T1 末段我們發現 standalone base case 集中在 ¥2,400──這個數字<em>已經帶著 conglomerate discount</em>。T2 把 discount 從『無形現象』變成『可量化金額』，並用<em>4-slider 互動計算器</em>讓你親手感受每個 BU 倍數的調整效果。":"<strong style='color:var(--t2);'>↳ From T1:</strong> standalone base cases cluster at ¥2,400 — that number embeds conglomerate discount. T2 turns the discount from abstract phenomenon to quantifiable yen, with a <em>4-slider interactive calculator</em> letting you feel each BU's multiple effect."}</p>
+  </div>
+
+  <!-- WHY DISCOUNT EXISTS -->
+  <div class="card" style="margin-bottom:14px;">
+    <p class="cardTitle">📚 ${zh?"什麼是 Conglomerate Discount？三條學術理論":"What is the Conglomerate Discount? Three Sources"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"<strong>定義</strong>：多角化公司市值 < 各 BU 獨立交易價值總和。Ushijima (2015) 日本上市公司 2004–2012 平均 <strong>6–7%</strong>；Marakon US 平均 <strong>6%</strong>。S&i 被估 <strong>~15%</strong>。":"<strong>Definition</strong>: diversified firm market value < sum of BUs if traded separately. Ushijima 2015 JP avg <strong>6–7%</strong>; Marakon US avg <strong>6%</strong>. S&i pegged at <strong>~15%</strong>."}</p>
+
+    <div class="grid3" style="margin-top:10px;">
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(15,118,110,.05);border-left:3px solid var(--t2);">
+        <p style="font-weight:900;color:var(--t2);margin:0 0 5px;font-size:13px;">① ${zh?"資本配置失靈":"Capital misallocation"}</p>
+        <p class="p" style="font-size:12.5px;line-height:1.55;">${zh?"集團內現金流『社會主義式』補貼──強的補弱的（c-store 補 superstore），破壞 capital efficiency。":"Internal cash subsidized 'socialistically' — strong subsidizes weak (c-store subsidizes superstore), destroys capital efficiency."}</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(180,83,9,.05);border-left:3px solid var(--c1);">
+        <p style="font-weight:900;color:var(--c1);margin:0 0 5px;font-size:13px;">② ${zh?"管理層心力分散":"Mgmt distraction"}</p>
+        <p class="p" style="font-size:12.5px;line-height:1.55;">${zh?"S&i 維持 27 個雜項是『出於對創辦人尊敬』──stakeholder primacy 對 capital efficiency 的反噬。":"S&i kept 27 misc 'out of respect for founder' — stakeholder primacy clashes with capital efficiency."}</p>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:10px;padding:11px;background:rgba(76,29,149,.05);border-left:3px solid var(--t1);">
+        <p style="font-weight:900;color:var(--t1);margin:0 0 5px;font-size:13px;">③ ${zh?"資訊不對稱":"Info asymmetry"}</p>
+        <p class="p" style="font-size:12.5px;line-height:1.55;">${zh?"零售業分析師難同時精通 c-store + 超市 + 銀行 + 房地產，估值縮水。Pure-play 公司有專業覆蓋，倍數較高。":"Retail analysts can't cover c-store + super + bank + real estate simultaneously, shrinking valuation. Pure-plays get specialist coverage, higher multiples."}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ INTERACTIVE SoTP CALCULATOR ============ -->
+  <div class="card" style="margin-bottom:14px;border-left:5px solid var(--c1);">
+    <p class="cardTitle" style="color:var(--c1);">🎚️ ${zh?"互動 SoTP 計算器：拖曳四個 slider，即時看每股 SoTP 跳動":"Interactive SoTP: Drag four sliders, watch per-share SoTP jump live"}</p>
+    <p class="sm" style="margin-bottom:10px;">${zh?"每條 slider 控制一個 BU 的 pure-play EV/EBITDA 倍數。動畫長條圖即時呈現各 BU 對總值的貢獻。":"Each slider controls one BU's pure-play EV/EBITDA multiple. Animated bars show each BU's contribution live."}</p>
+
+    <div class="calc t2" id="calc-sotp">
+      <div class="sliderRow">
+        <div class="sliderLabel">${zh?"國內 CVS (EBITDA ¥355B)":"Domestic CVS (¥355B)"}</div>
+        <input type="range" min="40" max="100" step="1" id="slDom" value="${calcGet('dom',70)}"/>
+        <div class="sliderVal" id="slDomVal">${(calcGet('dom',70)/10).toFixed(1)}×</div>
+      </div>
+      <div class="sliderRow">
+        <div class="sliderLabel">${zh?"海外 CVS (EBITDA ¥655B) ⭐":"Overseas CVS (¥655B) ⭐"}</div>
+        <input type="range" min="60" max="130" step="1" id="slOvs" value="${calcGet('ovs',95)}"/>
+        <div class="sliderVal" id="slOvsVal">${(calcGet('ovs',95)/10).toFixed(1)}×</div>
+      </div>
+      <div class="sliderRow">
+        <div class="sliderLabel">${zh?"超市 (EBITDA ¥55B)":"Superstore (¥55B)"}</div>
+        <input type="range" min="30" max="80" step="1" id="slSup" value="${calcGet('sup',50)}"/>
+        <div class="sliderVal" id="slSupVal">${(calcGet('sup',50)/10).toFixed(1)}×</div>
+      </div>
+      <div class="sliderRow">
+        <div class="sliderLabel">${zh?"金融 + 其他 (EBITDA ¥37B)":"Fin + Others (¥37B)"}</div>
+        <input type="range" min="30" max="80" step="1" id="slFin" value="${calcGet('fin',45)}"/>
+        <div class="sliderVal" id="slFinVal">${(calcGet('fin',45)/10).toFixed(1)}×</div>
+      </div>
+      <div class="sm" style="font-size:11.5px;color:var(--muted);padding:0 4px;">${zh?"⭐ 海外 CVS 占 59% EBITDA，是 SoTP 的『搖擺變數』──小幅調整即引起總值大幅變動":"⭐ Overseas CVS = 59% of EBITDA — the SoTP swing variable; small shifts cause big total moves"}</div>
+
+      <!-- ANIMATED CONTRIBUTION BARS -->
+      <div class="sotpBars" style="margin-top:14px;">
+        <div class="sotpRow"><div class="bu">${zh?"國內 CVS":"Domestic CVS"}</div><div class="barWrap"><div class="barFill" id="barDom"></div><div class="barLabel" id="barDomLbl"></div></div><div class="barVal" id="valDom"></div></div>
+        <div class="sotpRow"><div class="bu">${zh?"海外 CVS ⭐":"Overseas CVS ⭐"}</div><div class="barWrap"><div class="barFill" id="barOvs"></div><div class="barLabel" id="barOvsLbl"></div></div><div class="barVal" id="valOvs"></div></div>
+        <div class="sotpRow"><div class="bu">${zh?"超市":"Superstore"}</div><div class="barWrap"><div class="barFill" id="barSup"></div><div class="barLabel" id="barSupLbl"></div></div><div class="barVal" id="valSup"></div></div>
+        <div class="sotpRow"><div class="bu">${zh?"金融+其他":"Fin+Others"}</div><div class="barWrap"><div class="barFill" id="barFin"></div><div class="barLabel" id="barFinLbl"></div></div><div class="barVal" id="valFin"></div></div>
+      </div>
+
+      <div class="sotpTotal" id="sotpTotal">
+        <div class="totLbl">${zh?"每股 SoTP（含 cash − debt 調整）":"SoTP per share (with cash − debt adjustment)"}</div>
+        <div class="totVal" id="sotpTotalVal">¥—</div>
+        <div class="resSubline" id="sotpSub" style="margin-top:6px;"></div>
+      </div>
+
+      <div class="vsLine" id="sotpVsLine" style="margin-top:14px;">
+        <div class="vsTick cur" style="left:51.12%;"><div class="lbl">¥2,556<br/>Current</div></div>
+        <div class="vsTick act" style="left:53.86%;"><div class="lbl">¥2,693<br/>ACT</div></div>
+        <div class="vsTick ito" style="left:68%;"><div class="lbl">¥3,400<br/>J. Ito</div></div>
+        <div class="vsTick live" id="sotpLiveTick" style="left:47.98%;"><div class="lbl" id="sotpLiveLbl">¥2,399</div></div>
+      </div>
+      <div class="axisLabels"><span>¥0</span><span>¥1,000</span><span>¥2,000</span><span>¥3,000</span><span>¥4,000</span><span>¥5,000</span></div>
+    </div>
+
+    <div class="callout gold" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>🎯 ${zh?"試試這些情境":"Try these scenarios"}</strong>：${zh?"<br/>• <strong>悲觀（ACT 改造失敗）</strong>：海外 6.0× · 國內 6.0× → SoTP 跌到 ¥1,400 區<br/>• <strong>基準（分析師中位）</strong>：海外 9.5× · 國內 7.0× → 約 ¥2,399<br/>• <strong>樂觀（改造成功、給 ACT trading multiple）</strong>：海外 11× · 國內 8× → 接近 ¥2,900<br/>• <strong>極樂觀</strong>：海外 12× · 國內 8× → 約 ¥3,164 → 接近 J. Ito offer":"<br/>• <strong>Pessimistic</strong> (ACT transformation fails): Ovs 6.0× · Dom 6.0× → SoTP ~¥1,400<br/>• <strong>Base</strong> (analyst median): Ovs 9.5× · Dom 7.0× → ~¥2,399<br/>• <strong>Optimistic</strong> (uplift to ACT trading multiple): Ovs 11× · Dom 8× → ~¥2,900<br/>• <strong>Bullish</strong>: Ovs 12× · Dom 8× → ~¥3,164 → near J. Ito"}</p>
+    </div>
+  </div>
+
+  <!-- ACTIVIST HISTORY (already shown in S0; T2 deepens) -->
+  <div class="card" style="margin-bottom:14px;background:rgba(180,83,9,.05);border-left:5px solid var(--c1);">
+    <p class="cardTitle" style="color:var(--c1);">💡 ${zh?"為什麼收購方愛 conglomerate？『Buying the whole is cheaper than buying the part』":"Why Do Acquirers Love Conglomerates? 'Buying the whole is cheaper than buying the part'"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"分析師原話：<em>『Buying the entire company is probably cheaper than just buying the international business, especially with the potential divestiture of other assets』</em>。拆開來看：":"Analyst: <em>'Buying the entire company is probably cheaper than just buying the international business, especially with the potential divestiture of other assets'</em>. Unpack:"}</p>
+    <ol class="ul" style="font-size:13px;line-height:1.7;margin-top:8px;">
+      <li>${zh?"<strong>整體買進 = 含 discount 的買進</strong>──市場把整體定價低於各部分總和。":"<strong>Buying the whole = buying with the discount embedded</strong>."}</li>
+      <li>${zh?"<strong>收購後 divest 非核心</strong>──ACT 拿下 S&i 可賣 superstore + financial + 27 misc（Isaka 已幫忙打包成 York Holdings！），現金回收一部分對價。":"<strong>Post-deal divest non-core</strong> — ACT can sell superstore + financial + 27 misc (Isaka pre-packaged as York Holdings!), recover part of consideration."}</li>
+      <li>${zh?"<strong>核心 c-store 淨支付 = 總對價 − divest 回收</strong>──遠低於 standalone 買 7-Eleven c-store。":"<strong>Net core c-store cost = total − divest proceeds</strong> — far less than standalone 7-Eleven c-store."}</li>
+    </ol>
+
+    <div class="callout red" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>⚠️ ${zh?"反諷":"Irony"}</strong>：${zh?"Isaka 在 ACT 第二次 offer 後馬上宣布 York Holdings──表面是『提高 corporate value』，<em>實質是替 ACT 預先打包 divest packet</em>。M&A 專家 Kawamoto 批評為『stopgap』：若 S&i 真心拒絕 ACT，應該把非核心保留在集團內，讓 ACT 不得不一起買下不想要的部分。":"Right after ACT's 2nd bid, Isaka announced York Holdings — ostensibly to 'enhance value' but <em>functionally pre-packages a divestiture bundle for ACT</em>. Kawamoto called it a 'stopgap': to truly repel ACT, S&i should have kept non-core bundled in."}</p>
+    </div>
+  </div>
+
+  ${quizCard({key:"t2_disc_q",q:"若 S&i conglomerate discount 真為 15%，SoTP (¥2,399) 與 standalone DCF (¥2,412) 的關係應該是：",q_en:"If conglomerate discount is truly 15%, the relation between SoTP (¥2,399) and standalone DCF (¥2,412):",opts:[["SoTP 應比 DCF 高 15%──但實際相等，說明分析師低估 c-store multiple","SoTP should be ~15% higher — but they're equal, so analysts under-applied c-store multiples"],["SoTP 應等於 DCF──數字相等，無 discount","SoTP should equal DCF — they do, no discount"],["SoTP 應低於 DCF，因為扣除分拆成本","SoTP should be lower because it nets breakup costs"],["兩者皆 standalone，與 discount 無關","Both standalone — discount irrelevant"]],ans:0,exp:"A 正確。理論上 SoTP 應比含 discount 的 standalone DCF 高出 discount 金額。¥2,399 ≈ ¥2,412 反映分析師用了保守海外倍數（9.5x，非 ACT 的 11x）。若用 12x → SoTP 達 ¥3,164──那才是『拆解後真值』，與 DCF 差 ¥752 (~31%) 才是真實 discount。",exp_en:"A. SoTP (post-breakup) should exceed discount-embedded DCF by the discount. ¥2,399 ≈ ¥2,412 means analysts used conservative overseas multiples (9.5x not ACT's 11x). At 12x → ¥3,164; gap of ¥752 (~31%) is the real discount."})}
+
+  ${revealBtn("t2_close","📋 TEACHER NOTE — T2 收尾 12 min")}
+  ${revealSection("t2_close",`
+    <ul class="ul" style="font-size:13px;margin-top:0;line-height:1.7;">
+      <li><strong>互動 SoTP 計算器的關鍵用法</strong>：請學生先<em>只拖海外 CVS 那條 slider</em>（從 6 拖到 12），讓他們親眼看 SoTP 從 ¥1,800 跳到 ¥3,200──同一個 EBITDA 數字，<em>單一倍數選擇就足以決定接受/拒絕 J. Ito offer</em>。這是 SoTP 法的<em>判斷負擔過於集中</em>的活教材。</li>
+      <li><strong>追問</strong>：『誰能告訴你海外 c-store 的"正確"倍數？』──沒有人。它取決於你對美國店面改造可行性的<em>主觀信念</em>。Esty 案例提醒：SoTP 不是 objective 工具，是 forcing function（強迫表態的工具）。</li>
+      <li><strong>把握『內在矛盾』教學機會</strong>：海外 c-store 是 59% EBITDA 但只有 4% op margin；國內是 32% EBITDA 但 27% op margin。Pure-play 倍數本應反映 margin（國內應該倍數高才對！），但案例給的『海外 9.5x · 國內 7x』倍數似乎反過來──為什麼？因為市場給<em>成長空間</em>溢價，海外有潛在 transformation upside，國內已成熟。這個對話可以拉到 5-7 分鐘。</li>
+      <li><strong>連回 Isaka 的 York Holdings</strong>：Isaka 把 31 個非核心打包成 York Holdings，<em>正是替 ACT 預先做了 SoTP 的工作</em>。M&A 專家 Kawamoto 的『stopgap』批評就建立在這個觀察上。問學生：若 Dacus 委員會想證明『standalone 比 ACT offer 好』，他應該如何利用 York Holdings？（答：York 上市可獨立給 c-store 業務一個 pure-play 倍數，把 conglomerate discount 從 standalone 估值中拆掉。）</li>
+      <li><strong>埋下 C1 伏筆</strong>：T2 處理『財務上分拆 conglomerate 的好處』；C1 處理『治理上為什麼 S&i 30 年來無法分拆』──兩者合起來才能解釋 ValueAct 5 年戰役為何只小贏。</li>
+    </ul>
+  `)}
+  `;
+}
+
+/* ───────────── C1: STAKEHOLDER vs SHAREHOLDER ───────────── */
+function viewC1(){
+  const zh=ST.lang==="zh";
+  return `
+  <div class="sectionHead">
+    <div>
+      <h1 class="h1">${zh?"⚖️ C1｜Stakeholder vs. Shareholder Primacy 的治理張力":"⚖️ C1 | Stakeholder vs. Shareholder Primacy"}</h1>
+      <p class="sub">${zh?"S&i 創辦人哲學 vs. METI 改革 · FEFTA 核心公司 · 治理改革時間線":"S&i founder philosophy vs. METI reform · FEFTA core · Reform timeline"}</p>
+    </div>
+    <div class="tag">8 min</div>
+  </div>
+  ${timeTags("c1")}
+
+  <div class="callout" style="background:linear-gradient(90deg,rgba(180,83,9,.06),rgba(15,118,110,.06));border-left:4px solid var(--c1);margin-bottom:14px;">
+    <p class="p" style="font-size:13px;margin:0;line-height:1.65;">${zh?"<strong style='color:var(--c1);'>↳ 接續 T2：</strong>T2 把 conglomerate discount 量化了──但<em>為什麼 S&i 不早分拆？</em>答案不在財務，而在治理哲學。創辦人 Masatoshi Ito 把『顧客』放金字塔頂端、『股東』放底端──這是 ValueAct 5 年只能小贏的根本原因。":"<strong style='color:var(--c1);'>↳ From T2:</strong> T2 quantified the discount — but <em>why didn't S&i break up earlier?</em> Not financial — philosophical. Founder placed customers at top of pyramid, shareholders at bottom — this is why ValueAct's 5-year fight only marginally won."}</p>
+  </div>
+
+  <!-- TWO PYRAMIDS -->
+  <div class="card" style="margin-bottom:14px;">
+    <p class="cardTitle">🔺 ${zh?"兩種公司治理哲學的金字塔":"Two Governance Pyramids"}</p>
+    <div style="overflow-x:auto;">
+    <svg viewBox="0 0 760 380" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:820px;display:block;margin:0 auto;font-family:var(--sans);">
+      <text x="190" y="25" text-anchor="middle" font-weight="900" font-size="14" fill="#B45309">${zh?"🇯🇵 S&i 創辦人金字塔 (Stakeholder)":"🇯🇵 S&i Founder's Pyramid (Stakeholder)"}</text>
+      <text x="570" y="25" text-anchor="middle" font-weight="900" font-size="14" fill="#1E3A5F">${zh?"📈 METI 2023 Guidelines (Shareholder-Tilted)":"📈 METI 2023 Guidelines (Shareholder-Tilted)"}</text>
+      <polygon points="190,50 130,310 250,310" fill="rgba(180,83,9,.10)" stroke="#B45309" stroke-width="2"/>
+      <line x1="160" y1="175" x2="220" y2="175" stroke="#B45309" stroke-width="1.2"/>
+      <line x1="145" y1="240" x2="235" y2="240" stroke="#B45309" stroke-width="1.2"/>
+      <text x="190" y="105" text-anchor="middle" font-size="12" font-weight="900" fill="#7C2D12">${zh?"顧客 Customers":"Customers"}</text>
+      <text x="190" y="120" text-anchor="middle" font-size="10" fill="#92400E">${zh?"最頂端":"top"}</text>
+      <text x="190" y="210" text-anchor="middle" font-size="11" font-weight="700" fill="#7C2D12">${zh?"供應商 / 社區 / 員工":"Suppliers / Community / Employees"}</text>
+      <text x="190" y="285" text-anchor="middle" font-size="12" font-weight="900" fill="#7C2D12">${zh?"股東 Shareholders":"Shareholders"}</text>
+      <text x="190" y="300" text-anchor="middle" font-size="10" fill="#92400E">${zh?"底層":"bottom"}</text>
+      <text x="190" y="340" text-anchor="middle" font-size="10.5" fill="#475569" font-style="italic">${zh?"Drucker：公司目的 = 服務顧客":"Drucker: Purpose = serve customers"}</text>
+      <text x="190" y="355" text-anchor="middle" font-size="10.5" fill="#475569" font-style="italic">${zh?"新進員工要看 18 分鐘 Ito 影片":"New employees watch 18-min Ito video"}</text>
+      <polygon points="570,50 510,310 630,310" fill="rgba(30,58,95,.10)" stroke="#1E3A5F" stroke-width="2"/>
+      <line x1="540" y1="175" x2="600" y2="175" stroke="#1E3A5F" stroke-width="1.2"/>
+      <line x1="525" y1="240" x2="615" y2="240" stroke="#1E3A5F" stroke-width="1.2"/>
+      <text x="570" y="105" text-anchor="middle" font-size="11" font-weight="900" fill="#172554">${zh?"股東共同利益":"Shareholders' Common Interests"}</text>
+      <text x="570" y="120" text-anchor="middle" font-size="10" fill="#1E3A8A">= DCF corporate value</text>
+      <text x="570" y="200" text-anchor="middle" font-size="11" font-weight="700" fill="#172554">${zh?"公司整體價值":"Corporate value"}</text>
+      <text x="570" y="215" text-anchor="middle" font-size="10" fill="#1E3A8A">${zh?"(現金流現值)":"(PV of cash flows)"}</text>
+      <text x="570" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#172554">${zh?"其他利害關係人":"Other stakeholders"}</text>
+      <text x="570" y="295" text-anchor="middle" font-size="9.5" fill="#1E3A8A">${zh?"(明確禁止以模糊理由拒絕 offer)":"(vague stakeholder defenses barred)"}</text>
+      <text x="570" y="340" text-anchor="middle" font-size="10.5" fill="#475569" font-style="italic">${zh?"Ito Review (2014): JP ROE 5%, US 23%, EU 15%":"Ito Review (2014): JP ROE 5%, US 23%, EU 15%"}</text>
+      <text x="570" y="355" text-anchor="middle" font-size="10.5" fill="#475569" font-style="italic">METI 2023: value = PV of FCFs</text>
+      <text x="380" y="200" text-anchor="middle" font-size="22" font-weight="900" fill="#DC2626">⚔</text>
+      <text x="380" y="222" text-anchor="middle" font-size="11" fill="#7f1d1d" font-weight="700">${zh?"治理張力":"Governance"}</text>
+      <text x="380" y="234" text-anchor="middle" font-size="11" fill="#7f1d1d" font-weight="700">${zh?"碰撞":"clash"}</text>
+    </svg>
+    </div>
+    <div class="govBar">
+      <div class="govItem">${zh?"👥 顧客 / 員工 / 社區":"👥 Customers / Employees / Community"}</div>
+      <div class="govArrow">⟷</div>
+      <div class="govItem">${zh?"📊 股東 ROE / 股價 / 控制權市場":"📊 Shareholder ROE / Price / Market for Control"}</div>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="card" style="margin-bottom:14px;">
+    <p class="cardTitle">📅 ${zh?"日本治理改革 30 年時間線":"Japan Governance Reform: 30 Years"}</p>
+    <div style="overflow-x:auto;">
+    <table class="tbl">
+      <thead><tr><th>${zh?"年份":"Year"}</th><th>${zh?"事件":"Reform"}</th><th>${zh?"方向":"Direction"}</th></tr></thead>
+      <tbody>
+        <tr><td>1990s</td><td>${zh?"經濟停滯 → 治理反思":"Stagnation → governance rethink"}</td><td>${zh?"舊：相互持股、銀行主導":"Old: cross-holdings, bank-led"}</td></tr>
+        <tr><td>2014</td><td>FSA Stewardship Code</td><td>${zh?"機構投資人主動參與":"Institutional engagement"}</td></tr>
+        <tr><td>2014</td><td>${zh?"Ito Review──點名 JP ROE 5% vs US 23%":"Ito Review — names JP ROE 5% vs US 23%"}</td><td>${zh?"要求 capital efficiency":"Demands capital efficiency"}</td></tr>
+        <tr><td>2015</td><td>TSE Corporate Governance Code</td><td>${zh?"長期價值":"Long-term value"}</td></tr>
+        <tr><td>2015</td><td>${zh?"Third Point 入 S&i":"Third Point enters S&i"}</td><td>${zh?"市場壓力進場":"Market pressure begins"}</td></tr>
+        <tr><td>2022</td><td>${zh?"S&i 董事會改組":"S&i board overhaul"}</td><td>${zh?"董事會回應":"Board-level response"}</td></tr>
+        <tr style="background:rgba(180,83,9,.08);"><td><strong>2023.08</strong></td><td><strong>${zh?"METI M&A Guidelines":"METI M&A Guidelines"}</strong></td><td><strong>${zh?"shareholder primacy 法制化":"Codifies shareholder primacy"}</strong></td></tr>
+        <tr><td>2024.04</td><td>${zh?"S&i CEO/Chair 分離；Dacus 任 Lead Indep.":"S&i splits CEO/Chair; Dacus Lead Indep."}</td><td>${zh?"預備 special committee":"Pre-positions committee"}</td></tr>
+        <tr style="background:rgba(0,43,92,.06);"><td><strong>2024.07–11</strong></td><td><strong>${zh?"ACT + J. Ito 雙 offer = 本案":"ACT + J. Ito double bid = this case"}</strong></td><td><strong>${zh?"新框架首次大考":"First major test"}</strong></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <!-- FEFTA -->
+  <div class="card" style="margin-bottom:14px;background:rgba(220,38,38,.04);border-left:5px solid var(--ai);">
+    <p class="cardTitle" style="color:var(--ai);">🛡️ ${zh?"FEFTA 與『核心公司』指定──國家安全的第三軸":"FEFTA & 'Core Company' — National-Security Third Axis"}</p>
+    <p class="p" style="font-size:13.5px;line-height:1.7;">${zh?"S&i 拒絕 ACT 第一次 offer 一週後，MOF 依 FEFTA 將 S&i 指定為『核心』公司。日本三大 c-store 控有 90% 市占，依災防法被列為公共機構──地震、海嘯、颱風時是『生命線基礎設施』。被 core 後，外資併購要過更高審查門檻。":"One week after rejecting ACT's 1st offer, MOF designated S&i as 'core' under FEFTA. Japan's top 3 c-stores control 90% market — designated public institutions under disaster law. Core raises foreign-acquisition bar."}</p>
+
+    <div class="callout red" style="margin-top:10px;">
+      <p class="p" style="font-size:13px;"><strong>⚠ ${zh?"治理張力核心":"The governance tension's core"}</strong>：${zh?"METI Guidelines 說『不能用顧客/供應商關係之類模糊概念拒絕 offer』；<em>但 FEFTA 的 core 指定就是 stakeholder primacy 的具體法律工具</em>。同一個政府，一手要求 shareholders' common interests，另一手保留國家安全防線。<strong>Committee 必須同時對兩個訊號做出可辯護回應</strong>──這是 cross-border M&A 在日本的真實複雜度。":"METI says 'vague stakeholder reasons cannot reject offers'; <em>FEFTA's core is precisely a concrete legal tool for stakeholder primacy</em>. Same government demands shareholders' common interests AND preserves national security. <strong>Committee must defensibly respond to both</strong> — this is real cross-border M&A in Japan."}</p>
+    </div>
+  </div>
+
+  <!-- DEBATE -->
+  <div class="card" style="margin-bottom:14px;">
+    <p class="cardTitle">⚖️ ${zh?"小組辯論：兩個立場":"Group Debate: Two Positions"}</p>
+    <div class="debateGrid">
+      <div class="debateCard act">
+        <div class="debateLabel">${zh?"立場 A · 強 Shareholder Primacy":"Position A · Strong Shareholder Primacy"}</div>
+        <p class="p" style="font-size:13px;line-height:1.65;">${zh?"『METI 已寫清楚──corporate value = sum of PVs of FCFs。J. Ito ¥3,400 給股東創造最大價值；FEFTA / 創辦人哲學不能作為拒絕高價的理由。』":"\"METI made rules clear — corp value = sum of PVs of FCFs. J. Ito ¥3,400 maximizes shareholder value; FEFTA / founder philosophy cannot override price.\""}</p>
+      </div>
+      <div class="debateCard ito">
+        <div class="debateLabel">${zh?"立場 B · 結構性 Stakeholder Primacy":"Position B · Structural Stakeholder Primacy"}</div>
+        <p class="p" style="font-size:13px;line-height:1.65;">${zh?"『METI 提供框架但不是教條。S&i 是國家災防基礎設施。Shareholders' common interests <em>包括</em>長期營運穩定──短期高價但破壞員工士氣、加盟店信任、政府關係的 offer 應被嚴格審視。』":"\"METI is framework not dogma. S&i is national lifeline. Shareholders' common interests <em>include</em> long-run operational stability — short-term premium that erodes employee morale, franchisee trust, govt relations deserves scrutiny.\""}</p>
+      </div>
+    </div>
+  </div>
+
+  ${pollCard({key:"c1_governance",title:"Dacus 必須投票時，他應該把『FEFTA + 創辦人哲學』放在哪？",title_en:"When Dacus votes, where should 'FEFTA + founder philosophy' sit?",opts:[["a","完全不考慮──METI 明示禁止","Ignore — METI explicitly bars"],["b","只在 feasibility / probability of close 框下考慮","Only under 'feasibility / probability of close'"],["c","平手時的決定性 tiebreaker","Decisive tiebreaker"],["d","與股東價值並列的獨立軸","Independent axis on par with shareholder value"]],followup:["A：MOF 已啟動 FEFTA──既成事實怎麼處理？","B：feasibility 不是 0/1──¥2,693 × 60% vs ¥3,400 × 50% 如何比？","C：tiebreaker 只在期望值相等時有意義","D：怎麼向 ValueAct 解釋『stakeholder 與 shareholder 同等』？"],followup_en:["A: MOF already invoked FEFTA — how handle?","B: Feasibility is probabilistic — ¥2,693 × 60% vs ¥3,400 × 50%?","C: Tiebreakers only matter when EVs match","D: How explain to ValueAct that stakeholders rank equally?"]})}
+
+  ${revealBtn("c1_close","📋 TEACHER NOTE — C1 收尾 8 min")}
+  ${revealSection("c1_close",`
+    <ul class="ul" style="font-size:13px;margin-top:0;line-height:1.7;">
+      <li><strong>不要急著結論</strong>。本段的價值是讓學生看到兩個極端立場都站不住──A 忽略 FEFTA 既成事實；D 忽略 ValueAct 等股東的權利。真實答案是 B（量化為 feasibility 折扣）+ 給每個量化判斷留下文字解釋空間。</li>
+      <li><strong>關鍵教學數字</strong>：¥2,693 × 60% close probability = 期望值 ¥1,616；¥3,400 × 50% = ¥1,700。這個對比顯示『價格 × 機率』的思考方式──然後問學生：在標準 M&A advisory 實務中，60% 與 50% 怎麼估？答：用情境分析（regulatory pathway / financing letter / antitrust precedent）。</li>
+      <li><strong>連結到 Sirower-Weirens 框架</strong>：C1 處理的不是『Valuation &amp; Synergy』方塊，而是<em>包圍整張圖的治理脈絡</em>。日本案件特殊之處在於：METI 改革讓『Grow vs. Exit』的選擇權從管理層轉移到股東──但 FEFTA 又把部分權力留給政府。</li>
+    </ul>
+  `)}
+  `;
+}
+
+/* ───────────── S1: DECISION MEMO (NO CITATIONS) ───────────── */
+function viewS1(){
+  const zh=ST.lang==="zh";
+  return `
+  <div class="sectionHead">
+    <div>
+      <h1 class="h1">${zh?"📝 S1｜你的 5 分鐘 Memo：Special Committee 該怎麼建議？":"📝 S1 | Your 5-Min Memo: What Should the Committee Recommend?"}</h1>
+      <p class="sub">${zh?"整合 T1 估值 × T2 conglomerate × C1 治理，產出可辯護的單頁建議":"Integrate T1 × T2 × C1 into a defensible one-page recommendation"}</p>
+    </div>
+    <div class="tag">5 min</div>
+  </div>
+  ${timeTags("s1")}
+
+  <div class="card" style="margin-bottom:14px;background:rgba(0,43,92,.04);">
+    <p class="cardTitle">📊 ${zh?"三選項並排檢驗表（你的 Memo 第一頁）":"Side-by-Side Matrix (Page 1 of Your Memo)"}</p>
+    <div style="overflow-x:auto;">
+    <table class="tbl">
+      <thead><tr>
+        <th style="width:24%;">${zh?"維度":"Dimension"}</th>
+        <th style="border-top:3px solid var(--act);background:rgba(14,116,144,.06);color:var(--act);width:25%;">🇨🇦 ACT ¥2,693</th>
+        <th style="border-top:3px solid var(--ito);background:rgba(124,58,237,.06);color:var(--ito);width:25%;">👨‍👦 J. Ito MBO ¥3,400</th>
+        <th style="border-top:3px solid var(--standalone);background:rgba(71,85,105,.06);color:var(--standalone);width:25%;">🏯 Standalone</th>
+      </tr></thead>
+      <tbody>
+        <tr><td><strong>${zh?"每股價":"Per share"}</strong></td><td>¥2,693</td><td>¥3,400</td><td>¥2,556 (current) · DCF ¥2,412</td></tr>
+        <tr><td><strong>vs. pre-deal premium</strong></td><td>+49%</td><td>+89%</td><td>+42%</td></tr>
+        <tr><td><strong>${zh?"vs. 4 法 base 中位":"vs. 4-method base"}</strong></td><td>+11%</td><td>+40%</td><td>0%</td></tr>
+        <tr><td><strong>${zh?"融資確定性":"Financing certainty"}</strong></td><td>${zh?"高 · BBB+ · highly confident letter":"High · BBB+ · highly confident letter"}</td><td>${zh?"低 · ¥6Tr 史上最大 · 三銀行『探索』":"Low · ¥6Tr largest-ever · 3 banks 'exploring'"}</td><td>N/A</td></tr>
+        <tr><td><strong>${zh?"監理風險":"Regulatory risk"}</strong></td><td>${zh?"高 · FEFTA · US antitrust":"High · FEFTA · US antitrust"}</td><td>${zh?"低 · 國內":"Low · domestic"}</td><td>${zh?"無":"None"}</td></tr>
+        <tr><td><strong>${zh?"創價邏輯":"Value-creation logic"}</strong></td><td>${zh?"US 改造 + 規模綜效 (46% target EBITDA 歷史)":"US transformation + scale synergy (46% historical)"}</td><td>${zh?"unclear · 拆分可能 · 私有化":"Unclear · possible carve-outs · privatization"}</td><td>${zh?"York Holdings + 改名 + 中期計畫":"York Holdings + rename + mid-term plan"}</td></tr>
+        <tr><td><strong>${zh?"治理訊號":"Governance signal"}</strong></td><td>${zh?"日本可被外資併購":"Japan can be acquired"}</td><td>${zh?"家族用 MBO 抗外資":"Family MBO to repel foreign"}</td><td>${zh?"董事會可拒絕兩個 offer":"Board can reject both"}</td></tr>
+        <tr style="background:rgba(0,43,92,.10);"><td><strong>${zh?"期望值（粗估）":"Expected value (rough)"}</strong></td><td><strong>¥2,693 × 65% = ¥1,750</strong></td><td><strong>¥3,400 × 50% = ¥1,700</strong></td><td><strong>${zh?"¥2,412 × 100% = ¥2,412 (理論)":"¥2,412 × 100% = ¥2,412 (theoretical)"}</strong></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="grid3" style="margin-bottom:14px;">
+    <div class="debateCard act">
+      <div class="debateLabel">${zh?"Path A · 推薦 ACT":"Path A · Recommend ACT"}</div>
+      <p class="p" style="font-size:12.5px;line-height:1.65;">${zh?"<strong>論證</strong>：可關閉性高、premium 在 IQR 上緣、整合有歷史紀錄。<em>條件</em>：要求加價至 ¥2,900–3,000、FEFTA mitigation 包裹。":"<strong>Logic</strong>: highest feasibility; premium at IQR upper edge; integration track record. <em>Condition</em>: require bump to ¥2,900–3,000 + FEFTA mitigation."}</p>
+    </div>
+    <div class="debateCard ito">
+      <div class="debateLabel">${zh?"Path B · 推薦 J. Ito":"Path B · Recommend J. Ito"}</div>
+      <p class="p" style="font-size:12.5px;line-height:1.65;">${zh?"<strong>論證</strong>：價最高、避 FEFTA / antitrust、保留創辦人精神。<em>條件</em>：X 天內提交三大行 binding commitment──否則降回 A。":"<strong>Logic</strong>: highest price; avoids FEFTA/antitrust; preserves founder legacy. <em>Condition</em>: submit binding bank commitments in X days, else default to A."}</p>
+    </div>
+    <div class="debateCard stand">
+      <div class="debateLabel">${zh?"Path C · 拒絕兩者 + York":"Path C · Reject both + York"}</div>
+      <p class="p" style="font-size:12.5px;line-height:1.65;">${zh?"<strong>論證</strong>：DCF (5.5% / 2%) 可達 ¥2,949──若 Isaka 計畫可信會優於 ACT。<em>條件</em>：York 必須有明確時間表、可量化里程碑、CEO 薪酬連動。":"<strong>Logic</strong>: DCF at 5.5%/2% reaches ¥2,949 — if credible, beats ACT. <em>Condition</em>: York needs explicit timeline, milestones, CEO comp linkage."}</p>
+    </div>
+  </div>
+
+  ${pollCard({key:"s1_final",title:"最終投票：作為委員會顧問，你的書面建議是？",title_en:"Final vote: as adviser, your written recommendation is?",opts:[["a","Path A：條件式推薦 ACT","Path A: Conditional ACT"],["b","Path B：條件式推薦 J. Ito","Path B: Conditional J. Ito"],["c","Path C：拒絕兩者、檢驗 York","Path C: Reject both, scrutinize York"],["d","延期──要求第三輪 / 開啟 auction","Defer — request 3rd round / auction"]],followup:["你選擇的『條件』如何驗證？條件不滿足的後備？","你的建議要寫進 Committee 公開記錄──怎麼措辭不被起訴？","Dacus 是 Lead Indep Director──你的建議與他的個人聲譽如何權衡？"],followup_en:["How verify 'conditions'? Backup if unmet?","Memo goes public — phrasing to avoid lawsuits?","Dacus is Lead Indep — weigh recommendation vs. his reputation?"]})}
+
+  ${revealBtn("s1_close","📋 TEACHER NOTE — S1 收尾與真實後續")}
+  ${revealSection("s1_close",`
+    <ul class="ul" style="font-size:13px;margin-top:0;line-height:1.7;">
+      <li><strong>不要說『答案是 X』</strong>。本案的價值在於暴露結構性兩難。Dacus 真實的選擇是同時做 Path A 的條件式對話 + Path D 的時間爭取──不立刻拒絕也不立刻接受，逼 ACT 提高、讓 J. Ito 補強融資。</li>
+      <li><strong>連回 Sirower-Weirens 框架</strong>：S1 memo 是 Valuation &amp; Synergy 方塊的 deliverable。下一步 Announcement Day──不論 Dacus 推薦哪條路，公開語言會被全球投資人解讀為日本 M&A 市場 signal。粗糙的 memo 不只傷 S&i、會傷 METI 改革。</li>
+      <li><strong>真實後續（2025 春）</strong>：ACT 第三次提案 $18.50 → 後續 $21；J. Ito MBO 因融資未到位 + 家族 2 月公開承認財務不足，offer 撤回；委員會最終<em>未推薦任何外部 offer</em>，要求 Isaka 加速 York 拆分與股票回購。這個結局可能不是『shareholder value』最大化，但也許是『shareholders' common interests』最具體的詮釋──兩者差異正是 METI 故意留下的解釋空間。</li>
+      <li><strong>連回教學目標</strong>：本案是 (1) acquisition valuation methods 活教材；(2) conglomerate discount 活案例；(3) Japan 治理改革『有 process 但 outcome 未知』的見證。學生離開教室時最該帶走的：『估值不會給你答案，框架會給你一個可辯護的論證流程』。</li>
+    </ul>
+  `)}
+  `;
+}
+
+/* ───────────── ROUTER & EVENTS ───────────── */
+const VIEWS = {s0:viewS0,t1:viewT1,t2:viewT2,c1:viewC1,s1:viewS1};
+
+/* === Interactive calculator wire-up === */
+function wireCalculators(){
+  // EV/EBITDA multiple calculator (T1)
+  const slMult = document.getElementById("slMult");
+  if(slMult){
+    const ebitda=1102, cash=1470, debt=4370, shares=2604.6;
+    const update=()=>{
+      const m = parseInt(slMult.value,10)/10;  // 6.0 ~ 12.0
+      const ev = m*ebitda;
+      const eq = ev + cash - debt;
+      const ps = eq*1000/shares;  // ¥
+      document.getElementById("slMultVal").textContent = m.toFixed(1)+"×";
+      const priceEl = document.getElementById("multPrice");
+      priceEl.textContent = "¥"+Math.round(ps).toLocaleString();
+      // res classification
+      const res = document.getElementById("multResult");
+      res.classList.remove("beat-act","beat-ito","below-current");
+      if(ps>=3400) res.classList.add("beat-ito");
+      else if(ps>=2693) res.classList.add("beat-act");
+      else if(ps<2556) res.classList.add("below-current");
+      // subline
+      let sub;
+      const zh = ST.lang==="zh";
+      if(ps>=3400) sub = zh?"🟣 已超過 J. Ito MBO 出價──需要極樂觀的 multiple 假設":"🟣 Exceeds J. Ito MBO — requires very bullish multiple";
+      else if(ps>=2693) sub = zh?"🔵 已超過 ACT 第二次 offer──但落在『樂觀』情境":"🔵 Exceeds ACT 2nd offer — but in 'optimistic' scenario";
+      else if(ps>=2556) sub = zh?"⚪ 落在 ACT 與當前市價之間":"⚪ Between current price and ACT offer";
+      else sub = zh?"🔴 低於當前市價──ACT 不可能以這個 multiple 出價":"🔴 Below current price — ACT wouldn't bid this low";
+      document.getElementById("multSub").textContent = sub;
+      // vs line live tick (axis ¥0-¥5,000)
+      const pct = Math.max(0,Math.min(100,ps/5000*100));
+      const tick = document.getElementById("multLiveTick");
+      tick.style.left = pct+"%";
+      document.getElementById("multLiveLbl").textContent = "¥"+Math.round(ps).toLocaleString();
+      calcSet('mult',parseInt(slMult.value,10));
+    };
+    slMult.addEventListener("input",update);
+    update();
+  }
+
+  // DCF calculator (T1)
+  const slMargin = document.getElementById("slMargin");
+  if(slMargin){
+    const slGrowth = document.getElementById("slGrowth");
+    const update=()=>{
+      const m = parseInt(slMargin.value,10)/1000;   // 0.035 ~ 0.065
+      const g = parseInt(slGrowth.value,10)/1000;   // 0 ~ 0.04
+      const wacc = 0.05, tg = 0.01, tax = 0.33;
+      const baseRev = 11628.9;
+      let pv = 0;
+      // simple model: 5-year FCF + terminal value, matching Exhibit 11 logic
+      // FCF = EBIAT + D&A - dWC - CapEx
+      const da = [418.8,424.2,420,415,410];
+      const dwc = [-42.9,-53.2,-38.9,-45.3,-43.9];
+      const capex = [-407,-395.9,-390,-395,-400];
+      let rev=baseRev; let fcfTerm=0;
+      for(let t=0;t<5;t++){
+        if(t>0) rev = rev*(1+g);
+        const ebit = m*rev;
+        const ebiat = ebit*(1-tax);
+        const fcf = ebiat + da[t] + dwc[t] + capex[t];
+        const df = 1/Math.pow(1+wacc,t+0.5);
+        pv += fcf*df;
+        if(t===4) fcfTerm = fcf;
+      }
+      const tv = fcfTerm*(1+tg)/(wacc-tg);
+      const tvPv = tv * 1/Math.pow(1+wacc,4.5);
+      pv += tvPv;
+      const eq = pv + 1470 - 4370;
+      const ps = eq*1000/2604.6;
+      document.getElementById("slMarginVal").textContent = (m*100).toFixed(1)+"%";
+      document.getElementById("slGrowthVal").textContent = (g*100).toFixed(1)+"%";
+      const priceEl = document.getElementById("dcfPrice");
+      const psR = Math.max(0,Math.round(ps));
+      priceEl.textContent = "¥"+psR.toLocaleString();
+      const res = document.getElementById("dcfResult");
+      res.classList.remove("beat-act","beat-ito","below-current");
+      if(ps>=3400) res.classList.add("beat-ito");
+      else if(ps>=2693) res.classList.add("beat-act");
+      else if(ps<2556) res.classList.add("below-current");
+      const zh = ST.lang==="zh";
+      let sub;
+      if(ps>=3400) sub = zh?"🟣 DCF 超過 J. Ito ¥3,400──需要 6%+ margin 且 2%+ growth":"🟣 Exceeds J. Ito ¥3,400 — needs 6%+ margin AND 2%+ growth";
+      else if(ps>=2693) sub = zh?"🔵 DCF 超過 ACT ¥2,693──需要美國改造 + 海外擴張成功":"🔵 Exceeds ACT ¥2,693 — requires US transformation + overseas expansion";
+      else if(ps>=2556) sub = zh?"⚪ 落在 ACT 與當前市價之間":"⚪ Between current and ACT";
+      else sub = zh?"🔴 低於當前市價──standalone 計畫無法支撐當前估值":"🔴 Below current — standalone plan can't support current price";
+      document.getElementById("dcfSub").textContent = sub;
+      // for vs line (axis ¥0~¥5000)
+      const pct = Math.max(0,Math.min(100,ps/5000*100));
+      const tick = document.getElementById("dcfLiveTick");
+      tick.style.left = pct+"%";
+      document.getElementById("dcfLiveLbl").textContent = "¥"+psR.toLocaleString();
+      calcSet('mgn',parseInt(slMargin.value,10));
+      calcSet('grw',parseInt(slGrowth.value,10));
+    };
+    slMargin.addEventListener("input",update);
+    slGrowth.addEventListener("input",update);
+    update();
+  }
+
+  // SoTP calculator (T2) — 4 sliders
+  const slDom = document.getElementById("slDom");
+  if(slDom){
+    const slOvs = document.getElementById("slOvs"),
+          slSup = document.getElementById("slSup"),
+          slFin = document.getElementById("slFin");
+    const ebDom=355, ebOvs=655, ebSup=55, ebFin=37, cash=1470, debt=4370, shares=2604.6;
+    const update=()=>{
+      const dm = parseInt(slDom.value,10)/10,
+            om = parseInt(slOvs.value,10)/10,
+            sm = parseInt(slSup.value,10)/10,
+            fm = parseInt(slFin.value,10)/10;
+      const vDom = ebDom*dm, vOvs = ebOvs*om, vSup = ebSup*sm, vFin = ebFin*fm;
+      const totalEV = vDom+vOvs+vSup+vFin;
+      const eq = totalEV + cash - debt;
+      const ps = eq*1000/shares;
+      document.getElementById("slDomVal").textContent = dm.toFixed(1)+"×";
+      document.getElementById("slOvsVal").textContent = om.toFixed(1)+"×";
+      document.getElementById("slSupVal").textContent = sm.toFixed(1)+"×";
+      document.getElementById("slFinVal").textContent = fm.toFixed(1)+"×";
+      const max = Math.max(vDom,vOvs,vSup,vFin,1);
+      const setBar=(id,lblId,valId,v)=>{
+        const w = v/max*100;
+        document.getElementById(id).style.width = w+"%";
+        document.getElementById(lblId).textContent = "¥"+Math.round(v).toLocaleString()+"B";
+        document.getElementById(valId).textContent = "¥"+Math.round(v).toLocaleString()+"B";
+      };
+      setBar("barDom","barDomLbl","valDom",vDom);
+      setBar("barOvs","barOvsLbl","valOvs",vOvs);
+      setBar("barSup","barSupLbl","valSup",vSup);
+      setBar("barFin","barFinLbl","valFin",vFin);
+      const tot = document.getElementById("sotpTotal");
+      tot.classList.remove("beat-act","beat-ito");
+      if(ps>=3400) tot.classList.add("beat-ito");
+      else if(ps>=2693) tot.classList.add("beat-act");
+      document.getElementById("sotpTotalVal").textContent = "¥"+Math.round(ps).toLocaleString();
+      const zh = ST.lang==="zh";
+      let sub;
+      if(ps>=3400) sub = zh?"🟣 SoTP 已超過 J. Ito offer──需要對 conglomerate 拆分後的 upside 極樂觀":"🟣 Exceeds J. Ito — needs very bullish post-breakup upside";
+      else if(ps>=2693) sub = zh?"🔵 SoTP 已超過 ACT offer──暗示 conglomerate discount 真實存在":"🔵 Exceeds ACT — implies conglomerate discount is real";
+      else if(ps>=2399) sub = zh?"⚪ 接近 analyst 基準──保守 c-store 倍數":"⚪ Near analyst base — conservative c-store multiples";
+      else sub = zh?"🔴 SoTP 低於 standalone 估值──你的倍數太悲觀":"🔴 SoTP below standalone — your multiples are too bearish";
+      document.getElementById("sotpSub").textContent = sub;
+      // vs line
+      const pct = Math.max(0,Math.min(100,ps/5000*100));
+      document.getElementById("sotpLiveTick").style.left = pct+"%";
+      document.getElementById("sotpLiveLbl").textContent = "¥"+Math.round(ps).toLocaleString();
+      calcSet('dom',parseInt(slDom.value,10));
+      calcSet('ovs',parseInt(slOvs.value,10));
+      calcSet('sup',parseInt(slSup.value,10));
+      calcSet('fin',parseInt(slFin.value,10));
+    };
+    [slDom,slOvs,slSup,slFin].forEach(s=>s.addEventListener("input",update));
+    update();
+  }
+}
+
+function render(){
+  content.innerHTML = (VIEWS[ST.view]||viewS0)();
+  document.querySelectorAll(".navItem").forEach(b=>{
+    b.classList.toggle("active", b.dataset.view===ST.view);
+  });
+  window.scrollTo({top:0,behavior:"instant"});
+  // wire interactivity after each render
+  wireCalculators();
+}
+function setView(v){ST.view=v;save();render();}
+
+document.querySelectorAll(".navItem").forEach(b=>{
+  b.addEventListener("click",()=>setView(b.dataset.view));
+});
+document.getElementById("btnLang").addEventListener("click",()=>{
+  ST.lang = ST.lang==="zh"?"en":"zh"; save(); render();
+  showToast(ST.lang==="zh"?"已切換為中文":"Switched to English");
+});
+document.getElementById("btnPresenter").addEventListener("click",()=>{
+  ST.presenter = !ST.presenter; save();
+  document.body.classList.toggle("presenter", ST.presenter);
+  showToast(ST.presenter?(ST.lang==="zh"?"投影模式：開":"Presenter: ON"):(ST.lang==="zh"?"投影模式：關":"Presenter: OFF"));
+});
+document.getElementById("btnReset").addEventListener("click",()=>{
+  if(!confirm(ST.lang==="zh"?"重置所有投票、答題與展開狀態？":"Reset all polls, quizzes & reveals?"))return;
+  ST = {...DEF, lang:ST.lang}; save(); render();
+  showToast(ST.lang==="zh"?"已重置":"Reset complete");
+});
+document.addEventListener("keydown",e=>{
+  if(e.target.tagName==="INPUT"||e.target.tagName==="TEXTAREA")return;
+  if(e.key==="ArrowRight"){const i=VIEW_ORDER.indexOf(ST.view);if(i<VIEW_ORDER.length-1)setView(VIEW_ORDER[i+1]);}
+  if(e.key==="ArrowLeft"){const i=VIEW_ORDER.indexOf(ST.view);if(i>0)setView(VIEW_ORDER[i-1]);}
+  if(e.key==="l"||e.key==="L"){document.getElementById("btnLang").click();}
+  if(e.key==="p"||e.key==="P"){document.getElementById("btnPresenter").click();}
+  if(e.key==="r"||e.key==="R"){document.getElementById("btnReset").click();}
+});
+content.addEventListener("click",e=>{
+  const pollBtn = e.target.closest("[data-poll]");
+  if(pollBtn){vote(pollBtn.dataset.poll, pollBtn.dataset.opt); render(); return;}
+  const quizBtn = e.target.closest("[data-quiz]");
+  if(quizBtn){
+    const k=quizBtn.dataset.quiz; const i=parseInt(quizBtn.dataset.idx,10);
+    if(!ST.quizDone[k]){ST.quizDone[k]=i+1; save(); render();}
+  }
+});
+if(ST.presenter)document.body.classList.add("presenter");
+render();
+</script>
+</body>
+</html>
